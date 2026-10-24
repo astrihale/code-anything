@@ -1,0 +1,32 @@
+# Checks that the site builds (for example, that no translation is missing)
+# on every push to main. It never publishes anything: publish with
+# "Run normal mode" (full site) or "Run maintenance mode" (maintenance page).
+
+name: Build check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Build the site
+        run: python3 build.py
+
+      - name: Build the maintenance page
+        run: python3 build.py --maintenance

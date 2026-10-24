@@ -1,0 +1,31 @@
+    <h1 class="page-title">{{heading}}</h1>
+    <p class="page-lede">{{lede}}</p>
+
+    <div class="board">
+      <section class="board-col" aria-labelledby="col-next">
+        <h2 id="col-next">{{next_title}}</h2>
+        <ul class="board-list" data-roving="li">
+          {{#each next}}<li class="tooltip r-legendary">
+            <h3>{{.title}}</h3>
+            <p class="tt-meta">{{.meta}}</p>
+            <p>{{.text}}</p>
+          </li>
+          {{/each}}
+        </ul>
+      </section>
+
+      <section class="board-col" aria-labelledby="col-someday">
+        <h2 id="col-someday">{{someday_title}}</h2>
+        <ul class="board-list" data-roving="li">
+          {{#each someday}}<li class="tooltip r-rare">
+            <h3>{{.title}}</h3>
+            <p class="tt-meta">{{.meta}}</p>
+            <p>{{.text}}</p>
+          </li>
+          {{/each}}
+        </ul>
+      </section>
+    </div>
+
+    <div class="knot" aria-hidden="true"></div>
+    <div class="btn-row" data-roving="a"><a class="btn" href="{{link.contact}}">{{cta}}</a></div>

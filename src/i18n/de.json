@@ -1,0 +1,288 @@
+{
+  "common": {
+    "nav": {
+      "index": "Unternehmen",
+      "services": "Leistungen",
+      "expertise": "Expertise",
+      "founder": "Gründerin",
+      "ambitions": "Vorhaben",
+      "contact": "Kontakt"
+    },
+    "tagline": "Softwarearchitektur und Entwicklung, vom Browser bis zum Gerät",
+    "skip": "Zum Inhalt springen",
+    "menu": "Hauptmenü",
+    "language": "Sprache",
+    "keys_label": "Tastenkürzel anzeigen",
+    "legal_heading": "Impressum",
+    "legal": "CODE ANYTHING · OIB 71429144049 · Nicht umsatzsteuerlich registriert (obrt nije u sustavu PDV-a)",
+    "privacy": "Keine Cookies, kein Tracking, keine Anfragen an Dritte.",
+    "keys": {
+      "title": "Tastatur",
+      "rows": [
+        [
+          "<kbd>1</kbd>–<kbd>6</kbd>",
+          "Seite aus dem Menü öffnen"
+        ],
+        [
+          "<kbd>Tab</kbd> <kbd>Umschalt</kbd>+<kbd>Tab</kbd>",
+          "Zwischen Abschnitten wechseln"
+        ],
+        [
+          "<kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd>",
+          "Innerhalb von und zwischen Abschnitten bewegen"
+        ],
+        [
+          "<kbd>Pos1</kbd> <kbd>Ende</kbd>",
+          "Erstes oder letztes Element eines Abschnitts"
+        ],
+        [
+          "<kbd>Enter</kbd> <kbd>Leertaste</kbd>",
+          "Ausgewähltes Element aktivieren"
+        ],
+        [
+          "<kbd>Esc</kbd>",
+          "Fenster schließen"
+        ],
+        [
+          "<kbd>?</kbd>",
+          "Dieses Fenster anzeigen"
+        ]
+      ],
+      "hint": "Nicht jede Taste steht hier.",
+      "secrets": "Geheimnisse",
+      "close": "Schließen"
+    },
+    "copyright": "© {year} CODE ANYTHING, Ana Vuletić. Alle Rechte vorbehalten.",
+    "credit": "Erstellt mit Hilfe von KI.",
+    "legal_link": "Impressum",
+    "sealed_kicker": "Demnächst",
+    "sealed_text": "Diese Halle ist noch versiegelt. Was hinter diesen Türen liegt, wird gerade aufgeschrieben und öffnet bald.",
+    "sealed_cta": "Fragen Sie mich direkt"
+  },
+  "index": {
+    "title": "CODE ANYTHING · Beratung für Softwarearchitektur und Entwicklung",
+    "description": "CODE ANYTHING ist ein junges Ingenieurbüro aus Zagreb. Softwarearchitektur, Projektrettung, Sicherheit, Zahlungen und Systeme im großen Maßstab, Embedded und IoT. Remote in der EU und im DACH-Raum, Start-ups zuerst.",
+    "epigraph": "Jeder Fehler hat eine Ursache.",
+    "hero_title": "Ein Ingenieurbüro für Systeme, die sich keinen stillen Ausfall leisten können.",
+    "lede": "CODE ANYTHING ist ein junges, unabhängiges Beratungsunternehmen aus Zagreb. Ich entwerfe, baue und repariere Software über den gesamten Stack: die Oberflächen, auf die sich Menschen verlassen, Backends, die mitwachsen, Edge-Geräte und Firmware. Das Unternehmen ist neu. Die Ingenieursarbeit dahinter ist es nicht.",
+    "cta_services": "Zu den Leistungen",
+    "cta_contact": "Kontakt aufnehmen",
+    "aim_title": "Was ich vorhabe",
+    "aim": [
+      "Ich beginne bewusst klein: wenige Kunden gleichzeitig, jeder mit voller Aufmerksamkeit. <strong>Start-ups haben Vorrang</strong>. Sie brauchen jemanden, der aus einer Idee eine Spezifikation, eine Architektur und ein erstes funktionierendes Produkt macht, ohne ihr Budget zu verschwenden.",
+      "Ich übernehme auch die Probleme, um die andere einen Bogen machen: die Integration, die alle für unmöglich erklärt haben, den Fehler, der nur unter Last auftritt, das Gerät im Feld, das niemand erreicht. Wenn in Ihrem System etwas versagt, hat das einen Grund. Meine Aufgabe ist es, ihn zu finden und zu beseitigen."
+    ],
+    "take_title": "Was ich übernehme",
+    "cards": [
+      {
+        "title": "Architektur und Spezifikation",
+        "meta": "Für Start-ups und neue Produkte",
+        "text": "Von der groben Idee zu Spezifikation, Systementwurf und einem Plan, nach dem Ihr Team bauen kann."
+      },
+      {
+        "title": "Projektrettung und Ursachenanalyse",
+        "meta": "Für Teams, die feststecken",
+        "text": "Race Conditions, unerklärliche Ausfälle, langsame Systeme und Integrationen, die nicht funktionieren wollen."
+      },
+      {
+        "title": "Sicherheit, Zahlungen und Skalierung",
+        "meta": "Für wachsende SaaS-Plattformen",
+        "text": "Bot-Schutz, Zahlungsintegrationen, Multi-Region-Architektur und Datenresidenz."
+      },
+      {
+        "title": "Embedded, IoT und Industrie",
+        "meta": "Für Hardware-, E-Mobilitäts- und Handelsunternehmen",
+        "text": "Gerätesoftware, Modbus und OCPP, Kassen- und Zahlungshardware, Geräteflotten und Over-the-Air-Updates."
+      }
+    ],
+    "take_more": "Umfang, Ergebnisse und Formen der Zusammenarbeit",
+    "work_title": "Wie ich arbeite",
+    "tenets": [
+      {
+        "title": "Die Ursache, nicht das Symptom.",
+        "text": "Ein Computer ist eine deterministische Maschine. Jeder Fehler hat einen Grund, und dieser Grund lässt sich finden, erklären und dauerhaft beseitigen."
+      },
+      {
+        "title": "Das richtige Werkzeug.",
+        "text": "Es gibt immer ein besseres Werkzeug für die Aufgabe, auch wenn es nicht das ist, welches das Team schon kennt. Ich bin an keine Sprache und kein Framework gebunden."
+      },
+      {
+        "title": "Bauen, was gebraucht wird.",
+        "text": "Entwürfe, die heutige Anforderungen erfüllen und Raum für morgen lassen, ohne für Komplexität zu bezahlen, die niemand bestellt hat."
+      },
+      {
+        "title": "Klar und offen.",
+        "text": "Ehrlicher Umfang, ehrliche Schätzungen und eine ehrliche Antwort, wenn ich nicht die Richtige bin."
+      }
+    ],
+    "proven_title": "Im Einsatz bewährt",
+    "feats": [
+      {
+        "value": "Jede Schicht",
+        "text": "von Firmware und Geräten bis zu Backends und dem Browser"
+      },
+      {
+        "value": "100+",
+        "text": "Geräte im Feld, ausgerollt und per Over-the-Air aktualisiert"
+      },
+      {
+        "value": "OCPP",
+        "text": "Ladeprotokoll für Elektrofahrzeuge, durchgängig umgesetzt von der Bibliothek bis zur Ladesäule"
+      },
+      {
+        "value": "0",
+        "text": "unerklärte Fehler, die unerklärt bleiben"
+      }
+    ],
+    "behind_title": "Hinter dem Unternehmen",
+    "behind_text": "CODE ANYTHING wurde von <strong>Ana Vuletić</strong> gegründet, einer Softwarearchitektin, deren Arbeit große Webplattformen, Zahlungs- und Sicherheitssysteme, Edge-Linux und Industrieprotokolle sowie STM32-Firmware umfasst.",
+    "behind_link": "Über die Gründerin",
+    "cta_final": "Erzählen Sie mir, woran Sie arbeiten"
+  },
+  "services": {
+    "title": "Leistungen · CODE ANYTHING",
+    "description": "Leistungen von CODE ANYTHING. Demnächst.",
+    "heading": "Leistungen"
+  },
+  "expertise": {
+    "title": "Expertise · CODE ANYTHING",
+    "description": "Expertise von CODE ANYTHING. Demnächst.",
+    "heading": "Expertise"
+  },
+  "founder": {
+    "title": "Ana Vuletić · Gründerin von CODE ANYTHING · Softwarearchitektin",
+    "description": "Ana Vuletić hat CODE ANYTHING gegründet. Softwarearchitektin mit Arbeit an großen Webplattformen, Zahlungen, Sicherheit, Industrieprotokollen und Embedded-Geräten.",
+    "profile_label": "Profil",
+    "github_label": "Ana Vuletić auf GitHub",
+    "portrait_alt": "Illustriertes Porträt von Ana Vuletić",
+    "role": "Gründerin · Softwarearchitektin",
+    "stats": [
+      {
+        "label": "Unternehmen",
+        "value": "CODE ANYTHING"
+      },
+      {
+        "label": "Sitz",
+        "value": "Zagreb, Kroatien"
+      },
+      {
+        "label": "Arbeitet",
+        "value": "Remote · EU &amp; DACH"
+      },
+      {
+        "label": "Bandbreite",
+        "value": "Vom Browser bis zum Gerät"
+      }
+    ],
+    "languages_label": "Sprachen",
+    "languages_value": "Kroatisch, Englisch,",
+    "learning": "(lerne ich)",
+    "stress": "Stress",
+    "profile_title": "Profil",
+    "profile": [
+      "Ich bin Ana, die Gründerin von CODE ANYTHING. Meine Arbeit ist nie in einer Schicht des Stacks geblieben. Ich habe große Webplattformen gebaut und abgesichert, Zahlungsanbieter und Zahlungsterminals integriert, Geräteflotten im Feld betrieben, SPS, HMIs und Ladesäulen angebunden und Firmware für STM32-Mikrocontroller geschrieben.",
+      "Genau diese Bandbreite ist der Punkt. Die meisten Fehler entstehen zwischen den Schichten: zwischen Gerät und Server, Job und Event, Laptop und Build-Maschine. Am besten bin ich dort, wo sonst niemand hinsehen will: herausfinden, warum etwas passiert, und dafür sorgen, dass es aufhört.",
+      "Ich gehöre keiner Sprache und keinem Framework. C, C++, Java, Python und TypeScript sind meine Arbeitssprachen, und ich lerne ständig weitere, denn wer weiß, wie ein Werkzeug darunter funktioniert, wählt das richtige."
+    ],
+    "principles_title": "Grundsätze",
+    "principle_tool": "Es gibt immer ein besseres Werkzeug für die Aufgabe.",
+    "principle_reason": "Auf einem Computer passiert alles aus einem Grund. Er ist eine dumme, deterministische Maschine, kein Mensch, mit dem man diskutieren kann.",
+    "belongings_title": "Habseligkeiten",
+    "potion_title": "Haarfarbe",
+    "potion_meta": "Verbrauchsgut",
+    "potion_text": "Benutzen: Ändert die Haarfarbe im Porträt.",
+    "cube_title": "Zauberwürfel",
+    "cube_meta": "Oft und schnell gelöst",
+    "cube_text": "„Eine Folge deterministischer Algorithmen.“",
+    "f1_title": "Zielflagge",
+    "f1_text": "Interesse an allem, was bis auf die letzte Millisekunde konstruiert ist.",
+    "skate_title": "Skateboard",
+    "skate_meta": "Mehr zugeschaut als gefahren",
+    "skate_text": "Langjährige Bewunderung für alternative Sportarten und für die, die den Trick stehen.",
+    "ramsey_title": "Über Ramsey-Theorie",
+    "ramsey_meta": "Diskrete Mathematik",
+    "ramsey_text": "In jeder Gruppe von sechs Menschen gibt es immer drei, die sich gegenseitig kennen, oder drei, die einander fremd sind. R(3,3) = 6.",
+    "phones_title": "Kopfhörer",
+    "phones_meta": "Immer griffbereit",
+    "phones_text": "Jedes Genre und die Geschichte hinter jeder Platte.",
+    "book_title": "Das ungeschriebene Buch",
+    "book_meta": "In Arbeit",
+    "book_text": "Ein Buch, das jede Frage sammelt, die es wert ist, gestellt zu werden, und versucht, sie zu beantworten.",
+    "cta_expertise": "Gesamte Expertise",
+    "cta_contact": "Kontakt",
+    "torch_title": "Fackel",
+    "torch_meta": "Lichtquelle",
+    "torch_text": "Benutzen: Entzünde die Fackel und stelle deine Entschlossenheit erneut auf die Probe.",
+    "gloves_title": "Lederhandschuhe",
+    "gloves_meta": "Feines Leder. Sie duften herrlich.",
+    "gloves_text": "„Auf einem Ladentisch liegen gelassen, mit Absicht oder nicht. Vielleicht schicke ich sie der Besitzerin per Post.“"
+  },
+  "ambitions": {
+    "title": "Vorhaben · CODE ANYTHING · Projekte, die ich bauen will",
+    "description": "Projekte, die ich eines Tages bauen will: graphbasierte Autorisierung, schlanke Edge-Dienste in Go, Kotlin Native unter Linux, eine fertige Game-Engine und mehr. Interesse an einem davon? Melden Sie sich.",
+    "heading": "Vorhaben",
+    "lede": "Arbeit, die ich eines Tages machen will. Wenn etwas davon Ihren eigenen Plänen nahekommt, würde ich gern von Ihnen hören.",
+    "next_title": "Als Nächstes",
+    "next": [
+      {
+        "title": "Graphbasierte Autorisierung",
+        "meta": "Neo4j · Sicherheit",
+        "text": "Berechtigungsprüfungen als Graph modelliert, sodass „Darf dieser Nutzer das?“ eine einzige schnelle Traversierung ist, auch über Organisationen und geerbte Rollen hinweg."
+      },
+      {
+        "title": "Schlanke Edge-Dienste in Go",
+        "meta": "Go · Docker · Embedded Linux",
+        "text": "Edge-Microservices als kleine statische Programme in minimalen Containern neu schreiben, um Speicher und Platz auf knappen Geräten zu sparen."
+      }
+    ],
+    "someday_title": "Eines Tages",
+    "someday": [
+      {
+        "title": "Kotlin Native unter Linux",
+        "meta": "Kotlin · Native Programme",
+        "text": "Dienste mit moderner Nebenläufigkeit, die zu schlanken nativen Linux-Programmen kompilieren, ohne JVM."
+      },
+      {
+        "title": "Eine fertige Game-Engine",
+        "meta": "C# · OpenGL",
+        "text": "Die vor Jahren begonnene Engine fertigstellen: geprüftes Laden von Plugins, Rendering und Physik, ordentlich gemacht."
+      },
+      {
+        "title": "Das Buch",
+        "meta": "Schreiben",
+        "text": "Ein Buch, das die Fragen sammelt, die es wert sind, gestellt zu werden, und die besten Antworten, die ich geben kann."
+      }
+    ],
+    "cta": "Zusammenarbeit vorschlagen"
+  },
+  "contact": {
+    "title": "Kontakt · CODE ANYTHING",
+    "description": "Kontaktieren Sie CODE ANYTHING zu Softwarearchitektur, Sicherheit, Zahlungen, Embedded und IoT oder allem anderen. E-Mail ana@code-anything.hr. Remote in der EU und im DACH-Raum.",
+    "heading": "Kontakt",
+    "lede": "Erzählen Sie mir, woran Sie arbeiten. Ich lese jede Nachricht persönlich.",
+    "f_name": "Name",
+    "f_email": "E-Mail",
+    "f_company": "Unternehmen (optional)",
+    "f_topic": "Thema",
+    "topics": [
+      "Architektur und Spezifikation",
+      "Projektrettung und Ursachenanalyse",
+      "Sicherheit, Zahlungen und Skalierung",
+      "Embedded, IoT und Industrie",
+      "Etwas anderes"
+    ],
+    "f_message": "Nachricht",
+    "f_placeholder": "Was bauen Sie, was steht im Weg, und bis wann brauchen Sie es?",
+    "f_send": "Senden",
+    "f_note": "Dies öffnet eine vorbereitete E-Mail in Ihrem eigenen Mailprogramm. Es wird nichts an einen anderen Server gesendet.",
+    "f_sent": "Ihr Mailprogramm sollte sich jetzt öffnen. Falls nicht, schreiben Sie an",
+    "direct_title": "Direkt",
+    "direct_text": "Remote in der EU und im DACH-Raum. Gespräche auf Englisch oder Kroatisch.",
+    "legal_title": "Impressum",
+    "country": ", Kroatien",
+    "vat": "Nicht umsatzsteuerlich registriert (obrt nije u sustavu PDV-a).",
+    "email_label": "E-Mail",
+    "privacy_title": "Datenschutz",
+    "privacy_text": "Diese Website setzt keine Cookies, verwendet keine Analyse- oder Tracking-Dienste und lädt nichts von anderen Servern. Einige Einstellungen werden nur in Ihrem eigenen Browser gespeichert. Wenn Sie mir schreiben, wird Ihre E-Mail-Adresse nur für die Antwort verwendet."
+  }
+}

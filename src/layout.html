@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; font-src 'self'; form-action mailto:; base-uri 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="robots" content="{{robots}}">
+  <link rel="canonical" href="{{canonical}}">
+  {{alternates}}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CODE ANYTHING">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta name="theme-color" content="#070505">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/marcellus-sc-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css">
+  <script src="/assets/site.js" defer></script>
+  <script src="/assets/eggs.js" defer></script>
+  {{jsonld}}
+</head>
+<body data-page="{{page}}">
+  <a class="skip" href="#main">{{skip}}</a>
+
+  <header class="crest">
+    {{langs}}
+    <a class="crest-link" href="{{home}}">
+      <span class="crest-name">Code Anything</span>
+    </a>
+    <p class="crest-tagline">{{tagline}}</p>
+  </header>
+
+  <nav class="menu" aria-label="{{menu}}" data-roving=".menu-toggle, .tab, .help-btn">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-list"><span class="menu-icon" aria-hidden="true"></span><span class="visually-hidden">{{menu}}: </span>{{current_label}}</button>
+    <ul id="menu-list">
+        {{nav}}
+    </ul>
+    <button class="help-btn" type="button" data-help aria-keyshortcuts="?" aria-label="{{keys_label}}"><kbd>?</kbd></button>
+  </nav>
+
+  <main id="main" class="frame" tabindex="-1">
+    <span class="stud stud-top" aria-hidden="true"><span class="orb"></span></span>
+{{content}}
+  </main>
+
+  {{keys_dialog}}
+
+  <footer class="colophon">
+    <h2 class="visually-hidden">{{legal_heading}}</h2>
+    <p class="legal">{{legal}} · <a href="{{legal_href}}">{{legal_link}}</a></p>
+    <p class="privacy">{{privacy}}</p>
+    <p class="copyright">{{copyright}}</p>
+    <p class="credit">{{credit}}</p>
+  </footer>
+</body>
+</html>

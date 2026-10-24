@@ -1,0 +1,62 @@
+# Shared build and deploy steps, used by the other workflows in this folder.
+#
+# Actions are pinned to full commit SHAs (supply-chain safety); the comment
+# next to each SHA is the release it corresponds to.
+
+name: Site
+
+on:
+  workflow_call:
+    inputs:
+      maintenance:
+        description: Build only the maintenance page instead of the full site
+        type: boolean
+        default: false
+      deploy:
+        description: Publish the result to GitHub Pages
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Build the site
+        if: ${{ !inputs.maintenance }}
+        run: python3 build.py
+
+      - name: Build the maintenance page
+        if: ${{ inputs.maintenance }}
+        run: python3 build.py --maintenance
+
+      - name: Upload the site
+        if: ${{ inputs.deploy }}
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: docs/
+
+  deploy:
+    if: ${{ inputs.deploy }}
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

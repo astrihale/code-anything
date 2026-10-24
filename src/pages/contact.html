@@ -1,0 +1,56 @@
+    <h1 class="page-title">{{heading}}</h1>
+    <p class="page-lede">{{lede}}</p>
+
+    <div class="raven-grid">
+      <form class="slab" data-raven="ana@code-anything.hr" action="mailto:ana@code-anything.hr" method="post" enctype="text/plain">
+        <div class="field">
+          <label for="name">{{f_name}}</label>
+          <input id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">{{f_email}}</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="company">{{f_company}}</label>
+          <input id="company" name="company" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="quest">{{f_topic}}</label>
+          <select id="quest" name="quest">
+            {{#each topics}}<option>{{.}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">{{f_message}}</label>
+          <textarea id="message" name="message" required placeholder="{{f_placeholder}}"></textarea>
+        </div>
+        <button class="btn" type="submit">{{f_send}}</button>
+        <p class="form-note">{{f_note}}</p>
+        <p class="sent" hidden>{{f_sent}} <a href="mailto:ana@code-anything.hr">ana@code-anything.hr</a>.</p>
+      </form>
+
+      <div>
+        <div class="tooltip">
+          <h2>{{direct_title}}</h2>
+          <p><a href="mailto:ana@code-anything.hr">ana@code-anything.hr</a></p>
+          <p class="tt-meta">{{direct_text}}</p>
+          <p><a href="https://github.com/astrihale">github.com/astrihale</a></p>
+        </div>
+
+        <div class="tooltip" id="legal" data-stop>
+          <h2>{{legal_title}}</h2>
+          <p>CODE ANYTHING, obrt za programiranje i druge usluge, vl. Ana Vuletić</p>
+          <p>Sokolgradska ulica 22, Zagreb{{country}}</p>
+          <p>OIB: 71429144049</p>
+          <p>{{vat}}</p>
+          <p>{{email_label}}: <a href="mailto:ana@code-anything.hr">ana@code-anything.hr</a></p>
+        </div>
+
+        <div class="tooltip" data-stop>
+          <h2>{{privacy_title}}</h2>
+          <p>{{privacy_text}}</p>
+        </div>
+      </div>
+    </div>

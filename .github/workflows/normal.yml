@@ -1,0 +1,22 @@
+# Run manually: Actions → Run normal mode → Run workflow.
+# Builds and publishes the full site from main, ending maintenance mode.
+
+name: Run normal mode
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  site:
+    uses: ./.github/workflows/site.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

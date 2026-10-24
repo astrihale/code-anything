@@ -1,0 +1,25 @@
+# Run manually: Actions → Run maintenance mode → Run workflow.
+# Every address on code-anything.hr shows the maintenance page until
+# "Run normal mode" is run. Pushes to main do not change what is published.
+
+name: Run maintenance mode
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  site:
+    uses: ./.github/workflows/site.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    with:
+      maintenance: true

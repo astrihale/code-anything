@@ -1,0 +1,4 @@
+.DS_Store
+.idea/
+# Built by build.py; deployed by the GitHub Action.
+docs/

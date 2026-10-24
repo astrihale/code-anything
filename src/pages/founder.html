@@ -1,0 +1,231 @@
+    <div class="sheet">
+      <aside class="portrait-col" aria-label="{{profile_label}}">
+        <div class="portrait-wrap">
+          <figure class="portrait">
+            <svg viewBox="0 0 240 280" role="img" aria-label="{{portrait_alt}}">
+              <defs>
+                <radialGradient id="aura-good" cx="50%" cy="42%" r="55%"><stop offset="0" stop-color="#f3dcb4" stop-opacity="0.55"/><stop offset="1" stop-color="#c9a27a" stop-opacity="0"/></radialGradient>
+                <radialGradient id="aura-evil" cx="50%" cy="42%" r="55%"><stop offset="0" stop-color="#c41e24" stop-opacity="0.6"/><stop offset="1" stop-color="#3a0306" stop-opacity="0"/></radialGradient>
+              </defs>
+              <!-- Resolve outcome: a gold aura for a virtue, a red one for an affliction (hidden until then) -->
+              <ellipse class="aura aura-good" cx="120" cy="118" rx="118" ry="128" fill="url(#aura-good)"/>
+              <ellipse class="aura aura-evil" cx="120" cy="118" rx="118" ry="128" fill="url(#aura-evil)"/>
+              <!-- Hair behind the head and shoulders (recolourable) -->
+              <path class="hair" d="M70 100 C62 60 92 30 124 30 C164 30 196 58 192 100 C200 120 196 138 206 156 C216 176 204 196 214 214 C222 232 208 248 196 242 C198 256 184 262 176 252 C170 262 158 258 156 248 L152 200 L150 140 L92 140 L90 200 L86 246 C82 256 70 256 68 246 C58 254 46 246 50 234 C40 236 34 222 42 210 C50 196 40 180 48 164 C56 148 52 128 58 114 C62 106 66 102 70 100 Z"/>
+              <ellipse cx="121" cy="150" rx="58" ry="72" fill="#000" fill-opacity="0.16"/>
+
+              <!-- Neck and the skin inside the V neckline -->
+              <path d="M104 168 L136 168 L138 222 L120 262 L102 222 Z" fill="#efc3ab"/>
+              <path d="M104 178 C112 187 128 187 136 178 L136 192 C128 198 112 198 104 192 Z" fill="#c98a74" fill-opacity="0.4"/>
+              <circle cx="111" cy="207" r="1" fill="#8a5a4a" fill-opacity="0.7"/>
+
+              <!-- Necklace: a thin chain with a small bar -->
+              <path d="M104 198 L120 244 L136 198" fill="none" stroke="#c9a27a" stroke-width="0.9"/>
+              <rect x="118.6" y="244" width="2.8" height="10" rx="0.8" fill="#c9a27a"/>
+
+              <!-- Black V-neck top -->
+              <path d="M10 280 C14 246 44 228 88 222 L120 262 L152 222 C196 228 226 246 230 280 Z" fill="#121014"/>
+
+              <!-- Strands over the shoulders, beside the neck (recolourable) -->
+              <path class="hair" d="M90 158 C80 180 86 200 78 222 C72 238 80 250 92 254 C90 240 98 230 98 214 C98 196 94 180 98 166 Z"/>
+              <path class="hair" d="M150 156 C166 178 156 200 168 222 C176 240 166 255 150 259 C152 244 144 232 144 216 C144 198 148 180 142 166 Z"/>
+
+              <!-- Face: rounder, seen from slightly above -->
+              <path d="M120 66 C154 66 172 92 170 124 C168 154 150 178 120 182 C90 178 72 154 70 124 C68 92 86 66 120 66 Z" fill="#f4cdb6"/>
+              <ellipse cx="92" cy="147" rx="11" ry="6.5" fill="#e88e86" fill-opacity="0.25"/>
+              <ellipse cx="149" cy="147" rx="11" ry="6.5" fill="#e88e86" fill-opacity="0.25"/>
+              <circle cx="147" cy="166" r="1" fill="#8a5a4a" fill-opacity="0.6"/>
+
+              <!-- Earring: beaded, cream and red -->
+              <path d="M72.5 140 L71.5 148" stroke="#c9a27a" stroke-width="1"/>
+              <rect x="66" y="148" width="11" height="22" rx="3" fill="#ecdcc6"/>
+              <g fill="#b5473f"><rect x="66" y="152" width="11" height="2.4"/><rect x="66" y="158" width="11" height="2.4"/><rect x="66" y="164" width="11" height="2.4"/></g>
+
+              <!-- Brows -->
+              <path class="brow" d="M88 110 C96 106 106 106 112 108" fill="none" stroke="#c4a777" stroke-width="2.2" stroke-linecap="round"/>
+              <path class="brow" d="M128 108 C134 106 144 106 152 110" fill="none" stroke="#c4a777" stroke-width="2.2" stroke-linecap="round"/>
+              <path class="brow-evil" d="M87 106 C96 106 106 109 113 113" fill="none" stroke="#a88a5c" stroke-width="2.4" stroke-linecap="round"/>
+              <path class="brow-evil" d="M127 113 C134 109 144 106 153 106" fill="none" stroke="#a88a5c" stroke-width="2.4" stroke-linecap="round"/>
+
+              <!-- Eyes, looking up at the viewer, with winged liner -->
+              <path d="M87 124 C92 118 108 118 113 124 C108 129 92 129 87 124 Z" fill="#fbf5f0"/>
+              <path d="M127 124 C132 118 148 118 153 124 C148 129 132 129 127 124 Z" fill="#fbf5f0"/>
+              <circle class="iris" cx="100" cy="122.8" r="5.4" fill="#6f8796"/>
+              <circle class="iris" cx="140" cy="122.8" r="5.4" fill="#6f8796"/>
+              <circle cx="100" cy="122.8" r="2.3" fill="#1c1a1c"/>
+              <circle cx="140" cy="122.8" r="2.3" fill="#1c1a1c"/>
+              <circle cx="101.6" cy="121.2" r="1" fill="#fff"/>
+              <circle cx="141.6" cy="121.2" r="1" fill="#fff"/>
+              <path class="lid" d="M86 124 C91 116.5 109 116.5 114 124 C109 130 91 130 86 124 Z" fill="#f4cdb6"/>
+              <path class="lid lid-wink" d="M126 124 C131 116.5 149 116.5 154 124 C149 130 131 130 126 124 Z" fill="#f4cdb6"/>
+              <path d="M113 123 C107 117.5 93 117.5 86.5 124 L81 120.5" fill="none" stroke="#1a1012" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M127 123 C133 117.5 147 117.5 153.5 124 L159 120.5" fill="none" stroke="#1a1012" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+              <!-- Nose and nose ring -->
+              <path d="M120 128 C119 136 117 142 115 146 C118 149 122 149 125 146" fill="none" stroke="#b07562" stroke-opacity="0.55" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M113.4 145.8 A2.4 2.4 0 1 0 116.6 148.6" fill="none" stroke="#3a3434" stroke-width="1" stroke-linecap="round"/>
+
+              <!-- A gentle smile, higher on one side -->
+              <g class="smile">
+                <path d="M107 161 C114 167 126 167 135 158 C128 165.5 114 166 107 161 Z" fill="#d48a84" fill-opacity="0.55"/>
+                <path d="M106 160 C113 163.5 122 164.5 129 162 C132.5 160.8 135 158.6 137 155.5" fill="none" stroke="#a9615d" stroke-width="1.9" stroke-linecap="round"/>
+              </g>
+
+              <!-- Horns for an affliction, rising out of the hair (hidden until then) -->
+              <path class="horns" d="M86 66 C78 50 79 36 88 26 C88 39 92 50 99 59 Z M154 66 C162 50 161 36 152 26 C152 39 148 50 141 59 Z" fill="#4a0810"/>
+              <path class="horns" d="M87 58 C84 48 85 40 88 33 M153 58 C156 48 155 40 152 33" fill="none" stroke="#c41e24" stroke-opacity="0.6" stroke-width="1"/>
+              <!-- Hair framing the face: part, and a lock swept across the forehead (recolourable) -->
+              <path class="hair" d="M66 150 C60 118 64 88 80 70 C94 52 110 44 128 44 C156 44 180 62 184 92 C188 112 180 132 174 150 C172 130 170 116 166 108 C160 98 148 92 136 96 C128 90 118 82 108 70 C100 76 92 84 84 96 C78 108 74 124 72 140 C70 144 68 148 66 150 Z"/>
+              <g fill="none" stroke-linecap="round">
+                <path d="M108 70 C124 76 138 84 150 96" stroke="#000" stroke-opacity="0.12" stroke-width="1.3"/>
+                <path d="M100 52 C126 48 156 58 174 84" stroke="#fff" stroke-opacity="0.3" stroke-width="1.8"/>
+                <path d="M62 120 C56 150 62 176 54 204" stroke="#000" stroke-opacity="0.1" stroke-width="1.3"/>
+                <path d="M188 112 C196 140 190 170 200 200" stroke="#000" stroke-opacity="0.1" stroke-width="1.3"/>
+              </g>
+              <!-- Halo for a virtue (hidden until then) -->
+              <ellipse class="halo" cx="120" cy="30" rx="32" ry="7" fill="none" stroke="#f3dcb4" stroke-width="2.6"/>
+            </svg>
+          </figure>
+          <a class="sigil" href="https://github.com/astrihale" aria-label="{{github_label}}" title="{{github_label}}">
+            <img src="/assets/heart.png" alt="" width="80" height="80">
+          </a>
+        </div>
+        <div class="nameplate">
+          <h1 class="h1-like">Ana Vuletić</h1>
+          <p class="level">{{role}}</p>
+        </div>
+        <dl class="stats tooltip" data-stop>
+          {{#each stats}}<div><dt>{{.label}}</dt><dd>{{.value}}</dd></div>
+          {{/each}}
+          <div><dt>{{languages_label}}</dt><dd>{{languages_value}}<br><span class="axiom-egg" data-egg="deutsch" lang="de" tabindex="0" role="button">Deutsch</span> {{learning}}</dd></div>
+        </dl>
+        <div class="stress" title="{{stress}}" data-stop>
+          <span class="stress-label">{{stress}}</span>
+          <span class="pips" data-pips aria-hidden="true"></span>
+          <span class="visually-hidden" data-achievements></span>
+        </div>
+      </aside>
+
+      <div>
+        <h2 class="section-title">{{profile_title}}</h2>
+        <div class="slab prose" data-stop>
+          {{#each profile}}<p>{{.}}</p>
+          {{/each}}
+        </div>
+
+        <h2 class="section-title">{{principles_title}}</h2>
+        <ul class="axioms" data-roving=".axiom">
+          <li><blockquote class="axiom">{{principle_tool}}</blockquote></li>
+          <li><blockquote class="axiom axiom-egg" data-egg="axiom" tabindex="0" role="button">{{principle_reason}}</blockquote></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-title">{{belongings_title}}</h2>
+    <ul class="inventory" data-roving=".slot-btn" aria-label="{{belongings_title}}">
+      <li class="slot">
+        <button class="slot-btn q-epic-edge" type="button" data-egg="potion" aria-describedby="tt-potion">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M16 4h8v4l-1 1v7l9 13c2 4-1 8-5 8H13c-4 0-7-4-5-8l9-13V9l-1-1z" fill="#d8d0c4" opacity=".25" stroke="#cfc6b8" stroke-width="1.4"/><path class="hair" d="M11 28h18l3 3c1 3-1 5-4 5H12c-3 0-5-2-4-5z"/><rect x="15" y="2" width="10" height="3" rx="1" fill="#5a3a22"/></svg>
+          <span class="visually-hidden">{{potion_title}}</span>
+        </button>
+        <div class="tooltip" role="tooltip" id="tt-potion">
+          <h3 class="q-epic">{{potion_title}}</h3>
+          <p class="tt-meta">{{potion_meta}}</p>
+          <p class="tt-use">{{potion_text}}</p>
+        </div>
+      </li>
+      <li class="slot">
+        <button class="slot-btn q-rare-edge" type="button" data-egg="cube" aria-describedby="tt-cube">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="5" width="30" height="30" rx="3" fill="#111"/><g><rect x="7" y="7" width="8" height="8" fill="#b71c1c"/><rect x="16" y="7" width="8" height="8" fill="#c9a227"/><rect x="25" y="7" width="8" height="8" fill="#2e7d32"/><rect x="7" y="16" width="8" height="8" fill="#1565c0"/><rect x="16" y="16" width="8" height="8" fill="#d8d0c2"/><rect x="25" y="16" width="8" height="8" fill="#d35400"/><rect x="7" y="25" width="8" height="8" fill="#2e7d32"/><rect x="16" y="25" width="8" height="8" fill="#b71c1c"/><rect x="25" y="25" width="8" height="8" fill="#1565c0"/></g></svg>
+          <span class="visually-hidden">{{cube_title}}</span>
+        </button>
+        <div class="tooltip" role="tooltip" id="tt-cube">
+          <h3 class="q-rare">{{cube_title}}</h3>
+          <p class="tt-meta">{{cube_meta}}</p>
+          <p class="tt-flavor">{{cube_text}}</p>
+        </div>
+      </li>
+      <li class="slot">
+        <button class="slot-btn q-rare-edge" type="button" data-egg="f1" aria-describedby="tt-f1">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="4" width="2" height="33" fill="#8c7a62"/><g fill="#d8d0c2"><rect x="10" y="5" width="6" height="5"/><rect x="22" y="5" width="6" height="5"/><rect x="16" y="10" width="6" height="5"/><rect x="28" y="10" width="6" height="5"/><rect x="10" y="15" width="6" height="5"/><rect x="22" y="15" width="6" height="5"/></g><g fill="#111"><rect x="16" y="5" width="6" height="5"/><rect x="28" y="5" width="6" height="5"/><rect x="10" y="10" width="6" height="5"/><rect x="22" y="10" width="6" height="5"/><rect x="16" y="15" width="6" height="5"/><rect x="28" y="15" width="6" height="5"/></g></svg>
+          <span class="visually-hidden">{{f1_title}}</span>
+        </button>
+        <div class="tooltip" role="tooltip" id="tt-f1">
+          <h3 class="q-rare">{{f1_title}}</h3>
+          <p class="tt-meta">Formula 1</p>
+          <p>{{f1_text}}</p>
+        </div>
+      </li>
+      <li class="slot">
+        <button class="slot-btn q-uncommon-edge" type="button" data-egg="skateboard" aria-describedby="tt-skate">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 18c0-3 2-4 5-4h22c3 0 5 1 5 4s-2 4-5 4H9c-3 0-5-1-5-4z" fill="#4a1215" stroke="#cfc6b8" stroke-width="1"/><rect x="9" y="22" width="4" height="2" fill="#8c7a62"/><rect x="27" y="22" width="4" height="2" fill="#8c7a62"/><circle cx="11" cy="27" r="3" fill="#c9b37e"/><circle cx="29" cy="27" r="3" fill="#c9b37e"/></svg>
+          <span class="visually-hidden">{{skate_title}}</span>
+        </button>
+        <div class="tooltip" role="tooltip" id="tt-skate">
+          <h3 class="q-uncommon">{{skate_title}}</h3>
+          <p class="tt-meta">{{skate_meta}}</p>
+          <p>{{skate_text}}</p>
+        </div>
+      </li>
+      <li class="slot">
+        <button class="slot-btn q-epic-edge" type="button" data-egg="ramsey" aria-describedby="tt-ramsey">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="7" y="5" width="26" height="31" rx="2" fill="#2a0f12" stroke="#8c7a62" stroke-width="1.5"/><rect x="10" y="5" width="2" height="31" fill="#150708"/><g stroke="#c9b37e" stroke-width="1"><path d="M17 14l10 0M17 14l5 9M27 14l-5 9"/></g><g fill="#c9b37e"><circle cx="17" cy="14" r="1.6"/><circle cx="27" cy="14" r="1.6"/><circle cx="22" cy="23" r="1.6"/></g></svg>
+          <span class="visually-hidden">{{ramsey_title}}</span>
+        </button>
+        <div class="tooltip" role="tooltip" id="tt-ramsey">
+          <h3 class="q-epic">{{ramsey_title}}</h3>
+          <p class="tt-meta">{{ramsey_meta}}</p>
+          <p>{{ramsey_text}}</p>
+        </div>
+      </li>
+      <li class="slot">
+        <button class="slot-btn" type="button" data-egg="phones" aria-describedby="tt-phones">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 24v-4a12 12 0 0 1 24 0v4" fill="none" stroke="#8c7a62" stroke-width="3"/><rect x="5" y="22" width="7" height="12" rx="2" fill="#3d342c"/><rect x="28" y="22" width="7" height="12" rx="2" fill="#3d342c"/></svg>
+          <span class="visually-hidden">{{phones_title}}</span>
+        </button>
+        <div class="tooltip" role="tooltip" id="tt-phones">
+          <h3 class="q-common">{{phones_title}}</h3>
+          <p class="tt-meta">{{phones_meta}}</p>
+          <p>{{phones_text}}</p>
+        </div>
+      </li>
+      <li class="slot">
+        <button class="slot-btn q-legendary-edge" type="button" data-egg="book" aria-describedby="tt-book">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 10c6-2 11-1 16 2 5-3 10-4 16-2v22c-6-2-11-1-16 2-5-3-10-4-16-2z" fill="#c9b89a" stroke="#3d342c" stroke-width="1.2"/><path d="M20 12v22" stroke="#3d342c"/><path d="M30 4l-8 14 2 1 8-13z" fill="#d8d0c2" stroke="#8c7a62" stroke-width=".8"/></svg>
+          <span class="visually-hidden">{{book_title}}</span>
+        </button>
+        <div class="tooltip" role="tooltip" id="tt-book">
+          <h3 class="q-legendary">{{book_title}}</h3>
+          <p class="tt-meta">{{book_meta}}</p>
+          <p>{{book_text}}</p>
+        </div>
+      </li>
+      <li class="slot">
+        <button class="slot-btn q-epic-edge" type="button" data-egg="gloves" aria-describedby="tt-gloves">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M12 36 L12 20 C12 18 13 17 14.5 17 L14.5 8 C14.5 6.5 17.5 6.5 17.5 8 L17.5 16 L18 6 C18 4.5 21 4.5 21 6 L21 16 L21.5 7 C21.5 5.5 24.5 5.5 24.5 7 L24.5 17 L25 10 C25 8.5 28 8.5 28 10 L28 24 L31 20 C32 18.5 34.5 19.5 33.5 21.5 L28 31 L28 36 Z" fill="#6e1a24" stroke="#c9a27a" stroke-width="0.6" stroke-linejoin="round"/><rect x="12" y="31.5" width="16" height="4.5" rx="1" fill="#4a0f17" stroke="#c9a27a" stroke-width="0.6"/><path d="M15 22 C17 24 22 24 25 22" fill="none" stroke="#3a0a10" stroke-width="0.8"/></svg>
+          <span class="visually-hidden">{{gloves_title}}</span>
+        </button>
+        <div class="tooltip" role="tooltip" id="tt-gloves">
+          <h3 class="q-epic">{{gloves_title}}</h3>
+          <p class="tt-meta">{{gloves_meta}}</p>
+          <p class="tt-flavor">{{gloves_text}}</p>
+        </div>
+      </li>
+      <li class="slot">
+        <button class="slot-btn q-legendary-edge" type="button" data-egg="torch" aria-describedby="tt-torch">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="flame" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e8541a"/><stop offset="1" stop-color="#ffc067"/></linearGradient></defs><rect x="18" y="20" width="4" height="17" rx="1" fill="#6b4a2e"/><rect x="15.5" y="17.5" width="9" height="4.5" rx="1" fill="#3a2a1e"/><g class="torch-flame"><path d="M20 3 C26 9 27 13 24.5 18 L15.5 18 C13 13 14 9 20 3 Z" fill="url(#flame)"/><path d="M20 9 C22.5 12 22.5 15 21.5 18 L18.5 18 C17.5 15 17.5 12 20 9 Z" fill="#fff1c2" fill-opacity="0.85"/></g></svg>
+          <span class="visually-hidden">{{torch_title}}</span>
+        </button>
+        <div class="tooltip" role="tooltip" id="tt-torch">
+          <h3 class="q-legendary">{{torch_title}}</h3>
+          <p class="tt-meta">{{torch_meta}}</p>
+          <p class="tt-use">{{torch_text}}</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="knot" aria-hidden="true"></div>
+    <div class="btn-row" data-roving="a">
+      <a class="btn" href="{{link.expertise}}">{{cta_expertise}}</a>
+      <a class="btn btn-quiet" href="{{link.contact}}">{{cta_contact}}</a>
+    </div>

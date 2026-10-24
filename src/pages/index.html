@@ -1,0 +1,52 @@
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="epigraph">{{epigraph}}</p>
+      <h1 id="hero-title">{{hero_title}}</h1>
+      <p class="lede">{{lede}}</p>
+      <div class="btn-row" data-roving="a">
+        <a class="btn" href="{{link.services}}">{{cta_services}}</a>
+        <a class="btn btn-quiet" href="{{link.contact}}">{{cta_contact}}</a>
+      </div>
+    </section>
+
+    <h2 class="section-title">{{aim_title}}</h2>
+    <div class="slab prose" data-stop>
+      {{#each aim}}<p>{{.}}</p>
+      {{/each}}
+    </div>
+
+    <h2 class="section-title">{{take_title}}</h2>
+    <ul class="cards" data-roving="li">
+      {{#each cards}}<li class="tooltip r-legendary">
+        <h3>{{.title}}</h3>
+        <p class="tt-meta">{{.meta}}</p>
+        <p>{{.text}}</p>
+      </li>
+      {{/each}}
+    </ul>
+    <p class="center more" data-roving="a"><a href="{{link.services}}">{{take_more}}</a></p>
+
+    <h2 class="section-title">{{work_title}}</h2>
+    <ol class="tenets" data-roving="li">
+      {{#each tenets}}<li>
+        <h3>{{.title}}</h3>
+        <p>{{.text}}</p>
+      </li>
+      {{/each}}
+    </ol>
+
+    <h2 class="section-title">{{proven_title}}</h2>
+    <ul class="achievements-board" data-roving="li" aria-label="{{proven_title}}">
+      {{#each feats}}<li class="feat"><strong>{{.value}}</strong><span>{{.text}}</span></li>
+      {{/each}}
+    </ul>
+
+    <h2 class="section-title">{{behind_title}}</h2>
+    <div class="slab founder-teaser" data-stop>
+      <p>{{behind_text}}</p>
+      <p><a href="{{link.founder}}">{{behind_link}}</a></p>
+    </div>
+
+    <div class="knot" aria-hidden="true"></div>
+    <div class="btn-row" data-roving="a">
+      <a class="btn" href="{{link.contact}}">{{cta_final}}</a>
+    </div>

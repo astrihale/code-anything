@@ -1,0 +1,288 @@
+{
+  "common": {
+    "nav": {
+      "index": "Tvrtka",
+      "services": "Usluge",
+      "expertise": "Stručnost",
+      "founder": "Osnivačica",
+      "ambitions": "Ambicije",
+      "contact": "Kontakt"
+    },
+    "tagline": "Softverska arhitektura i razvoj, od preglednika do uređaja",
+    "skip": "Preskoči na sadržaj",
+    "menu": "Glavni izbornik",
+    "language": "Jezik",
+    "keys_label": "Prikaži tipkovničke prečace",
+    "legal_heading": "Pravne informacije",
+    "legal": "CODE ANYTHING · OIB 71429144049 · Obrt nije u sustavu PDV-a",
+    "privacy": "Bez kolačića, bez praćenja, bez zahtjeva prema trećim stranama.",
+    "keys": {
+      "title": "Tipkovnica",
+      "rows": [
+        [
+          "<kbd>1</kbd>–<kbd>6</kbd>",
+          "Otvori stranicu iz izbornika"
+        ],
+        [
+          "<kbd>Tab</kbd> <kbd>Shift</kbd>+<kbd>Tab</kbd>",
+          "Kretanje između odjeljaka"
+        ],
+        [
+          "<kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd>",
+          "Kretanje unutar i između odjeljaka"
+        ],
+        [
+          "<kbd>Home</kbd> <kbd>End</kbd>",
+          "Prva ili zadnja stavka odjeljka"
+        ],
+        [
+          "<kbd>Enter</kbd> <kbd>Space</kbd>",
+          "Aktiviraj odabranu stavku"
+        ],
+        [
+          "<kbd>Esc</kbd>",
+          "Zatvori prozor"
+        ],
+        [
+          "<kbd>?</kbd>",
+          "Prikaži ovaj prozor"
+        ]
+      ],
+      "hint": "Nisu sve tipke navedene ovdje.",
+      "secrets": "Tajne",
+      "close": "Zatvori"
+    },
+    "copyright": "© {year} CODE ANYTHING, Ana Vuletić. Sva prava pridržana.",
+    "credit": "Izrađeno uz pomoć AI-ja.",
+    "legal_link": "Podaci o obrtu",
+    "sealed_kicker": "Uskoro",
+    "sealed_text": "Ova je dvorana još zapečaćena. Ono što je iza ovih vrata još se zapisuje i uskoro se otvara.",
+    "sealed_cta": "Pitajte me izravno"
+  },
+  "index": {
+    "title": "CODE ANYTHING · Konzultantska tvrtka za softversku arhitekturu i razvoj",
+    "description": "CODE ANYTHING je mlada inženjerska konzultantska tvrtka iz Zagreba. Softverska arhitektura, spašavanje projekata, sigurnost, plaćanja i sustavi velikih razmjera, ugradbeni sustavi i IoT. Rad na daljinu za EU i DACH, prednost imaju startupi.",
+    "epigraph": "Svaki kvar ima uzrok.",
+    "hero_title": "Inženjerska konzultantska tvrtka za sustave koji si ne mogu priuštiti tihi kvar.",
+    "lede": "CODE ANYTHING je mlada, neovisna konzultantska tvrtka iz Zagreba. Projektiram, gradim i popravljam softver kroz cijeli stog: sučelja na koja se ljudi oslanjaju, backend sustave izgrađene za rast, rubne uređaje i firmware. Tvrtka je nova. Inženjerstvo iza nje nije.",
+    "cta_services": "Pogledajte usluge",
+    "cta_contact": "Javite mi se",
+    "aim_title": "Što želim postići",
+    "aim": [
+      "Namjerno počinjem malo: nekoliko klijenata istodobno, svaki s punom pažnjom. <strong>Startupi imaju prednost</strong>. Trebaju nekoga tko ideju može pretvoriti u specifikaciju, arhitekturu i prvi funkcionalni proizvod bez trošenja dragocjenog vremena i novca.",
+      "Preuzimam i probleme koje drugi izbjegavaju: integraciju koju su svi proglasili nemogućom, grešku koja se javlja samo pod opterećenjem, uređaj na terenu do kojeg nitko ne može doći. Ako nešto u vašem sustavu ne radi, za to postoji razlog. Moj posao je pronaći ga i ukloniti."
+    ],
+    "take_title": "Što preuzimam",
+    "cards": [
+      {
+        "title": "Arhitektura i specifikacija",
+        "meta": "Za startupe i nove proizvode",
+        "text": "Od grube ideje do specifikacije, dizajna sustava i plana po kojem vaš tim može graditi."
+      },
+      {
+        "title": "Spašavanje projekata i analiza uzroka",
+        "meta": "Za timove koji su zapeli",
+        "text": "Utrke niti, neobjašnjivi kvarovi, spori sustavi i integracije koje odbijaju raditi."
+      },
+      {
+        "title": "Sigurnost, plaćanja i skaliranje",
+        "meta": "Za SaaS platforme u rastu",
+        "text": "Zaštita od botova, integracije plaćanja, arhitektura u više regija i lokacija podataka."
+      },
+      {
+        "title": "Ugradbeni sustavi, IoT i industrija",
+        "meta": "Za proizvođače hardvera, punionice i maloprodaju",
+        "text": "Softver za uređaje, Modbus i OCPP, POS i platni hardver, flote uređaja i ažuriranja na daljinu."
+      }
+    ],
+    "take_more": "Opseg, isporuke i načini suradnje",
+    "work_title": "Kako radim",
+    "tenets": [
+      {
+        "title": "Uzrok, a ne simptom.",
+        "text": "Računalo je deterministički stroj. Svaki kvar ima razlog, a taj se razlog može pronaći, objasniti i trajno ukloniti."
+      },
+      {
+        "title": "Pravi alat za posao.",
+        "text": "Uvijek postoji bolji alat za posao, čak i kad to nije onaj koji tim već poznaje. Nisam vezana ni uz jedan jezik ni okvir."
+      },
+      {
+        "title": "Gradim ono što je potrebno.",
+        "text": "Rješenja koja zadovoljavaju današnje zahtjeve i ostavljaju prostor za sutrašnje, bez plaćanja složenosti koju nitko nije tražio."
+      },
+      {
+        "title": "Govorim jasno.",
+        "text": "Pošten opseg, poštene procjene i iskren odgovor kad nisam pravi izbor."
+      }
+    ],
+    "proven_title": "Dokazano na terenu",
+    "feats": [
+      {
+        "value": "Svaki sloj",
+        "text": "od firmwarea i uređaja do backenda i preglednika"
+      },
+      {
+        "value": "100+",
+        "text": "uređaja na terenu, postavljenih i ažuriranih na daljinu"
+      },
+      {
+        "value": "OCPP",
+        "text": "protokol za punjenje električnih vozila, implementiran od biblioteke do punjača"
+      },
+      {
+        "value": "0",
+        "text": "neobjašnjenih kvarova ostavljenih bez objašnjenja"
+      }
+    ],
+    "behind_title": "Tko stoji iza tvrtke",
+    "behind_text": "CODE ANYTHING je osnovala <strong>Ana Vuletić</strong>, softverska arhitektica čiji rad obuhvaća velike web platforme, sustave plaćanja i sigurnosti, rubni Linux i industrijske protokole te firmware za STM32.",
+    "behind_link": "O osnivačici",
+    "cta_final": "Recite mi na čemu radite"
+  },
+  "services": {
+    "title": "Usluge · CODE ANYTHING",
+    "description": "Usluge tvrtke CODE ANYTHING. Uskoro.",
+    "heading": "Usluge"
+  },
+  "expertise": {
+    "title": "Stručnost · CODE ANYTHING",
+    "description": "Stručnost tvrtke CODE ANYTHING. Uskoro.",
+    "heading": "Stručnost"
+  },
+  "founder": {
+    "title": "Ana Vuletić · Osnivačica tvrtke CODE ANYTHING · Softverska arhitektica",
+    "description": "Ana Vuletić osnovala je CODE ANYTHING. Softverska arhitektica koja radi na velikim web platformama, plaćanjima, sigurnosti, industrijskim protokolima i ugradbenim uređajima.",
+    "profile_label": "Profil",
+    "github_label": "Ana Vuletić na GitHubu",
+    "portrait_alt": "Ilustrirani portret Ane Vuletić",
+    "role": "Osnivačica · Softverska arhitektica",
+    "stats": [
+      {
+        "label": "Tvrtka",
+        "value": "CODE ANYTHING"
+      },
+      {
+        "label": "Sjedište",
+        "value": "Zagreb, Hrvatska"
+      },
+      {
+        "label": "Rad",
+        "value": "Na daljinu · EU i DACH"
+      },
+      {
+        "label": "Raspon",
+        "value": "Od preglednika do uređaja"
+      }
+    ],
+    "languages_label": "Jezici",
+    "languages_value": "Hrvatski, engleski,",
+    "learning": "(učim)",
+    "stress": "Stres",
+    "profile_title": "Profil",
+    "profile": [
+      "Ja sam Ana, osnivačica tvrtke CODE ANYTHING. Moj rad nikad nije ostao u jednom sloju sustava. Gradila sam i štitila velike web platforme, integrirala pružatelje plaćanja i platne terminale, upravljala flotama uređaja na terenu, povezivala PLC-ove, HMI-je i punjače za električna vozila te pisala firmware za STM32 mikrokontrolere.",
+      "Upravo je taj raspon poanta. Većina kvarova nastaje između slojeva: između uređaja i poslužitelja, posla i događaja, prijenosnog računala i build poslužitelja. Najbolja sam ondje gdje nitko drugi ne želi gledati: otkrivam zašto se nešto događa i brinem se da prestane.",
+      "Ne pripadam jednom jeziku ni okviru. C, C++, Java, Python i TypeScript moji su radni jezici, a stalno učim nove, jer razumijevanje toga kako alat radi iznutra jedini je način da se odabere pravi."
+    ],
+    "principles_title": "Načela",
+    "principle_tool": "Uvijek postoji bolji alat za posao.",
+    "principle_reason": "Na računalu se sve događa s razlogom. To je glup, deterministički stroj, a ne čovjek s kojim se može raspravljati.",
+    "belongings_title": "Osobne stvari",
+    "potion_title": "Boja za kosu",
+    "potion_meta": "Potrošno",
+    "potion_text": "Upotreba: mijenja boju kose na portretu.",
+    "cube_title": "Rubikova kocka",
+    "cube_meta": "Često i brzo riješena",
+    "cube_text": "„Niz determinističkih algoritama.”",
+    "f1_title": "Zastava s kockicama",
+    "f1_text": "Zanimanje za sve što je projektirano do posljednje milisekunde.",
+    "skate_title": "Skateboard",
+    "skate_meta": "Više gledan nego vožen",
+    "skate_text": "Dugogodišnje divljenje alternativnim sportovima i ljudima koji izvedu trik.",
+    "ramsey_title": "O Ramseyjevoj teoriji",
+    "ramsey_meta": "Diskretna matematika",
+    "ramsey_text": "U svakoj skupini od šest ljudi uvijek postoje troje međusobnih poznanika ili troje međusobnih stranaca. R(3,3) = 6.",
+    "phones_title": "Slušalice",
+    "phones_meta": "Uvijek pri ruci",
+    "phones_text": "Svaki žanr i priča iza svake ploče.",
+    "book_title": "Nenapisana knjiga",
+    "book_meta": "U nastajanju",
+    "book_text": "Knjiga koja skuplja sva pitanja vrijedna postavljanja i pokušava na njih odgovoriti.",
+    "cta_expertise": "Cjelokupna stručnost",
+    "cta_contact": "Kontakt",
+    "torch_title": "Baklja",
+    "torch_meta": "Izvor svjetla",
+    "torch_text": "Upotreba: zapali baklju i ponovno iskušaj odlučnost.",
+    "gloves_title": "Kožne rukavice",
+    "gloves_meta": "Fina koža. Lijepo mirišu.",
+    "gloves_text": "„Ostavljene na pultu, namjerno ili ne. Možda ih pošaljem vlasnici poštom.”"
+  },
+  "ambitions": {
+    "title": "Ambicije · CODE ANYTHING · Projekti koje namjeravam izgraditi",
+    "description": "Projekti koje namjeravam jednog dana izgraditi: autorizacija temeljena na grafovima, vitki servisi u Gou na rubu mreže, Kotlin Native na Linuxu, dovršen game engine i više. Zanima vas neki od njih? Javite mi se.",
+    "heading": "Ambicije",
+    "lede": "Posao koji namjeravam jednog dana obaviti. Ako je nešto od ovoga blizu vašim planovima, rado ću čuti od vas.",
+    "next_title": "Sljedeće",
+    "next": [
+      {
+        "title": "Autorizacija temeljena na grafovima",
+        "meta": "Neo4j · Sigurnost",
+        "text": "Provjere dozvola modelirane kao graf, tako da je pitanje „smije li ovaj korisnik ovo?” jedan brzi obilazak, čak i kroz organizacije i naslijeđene uloge."
+      },
+      {
+        "title": "Vitki servisi u Gou na rubu mreže",
+        "meta": "Go · Docker · Ugradbeni Linux",
+        "text": "Prepisivanje mikroservisa na rubu mreže u male statičke izvršne datoteke u minimalnim kontejnerima, radi uštede memorije i prostora na ograničenim uređajima."
+      }
+    ],
+    "someday_title": "Jednog dana",
+    "someday": [
+      {
+        "title": "Kotlin Native na Linuxu",
+        "meta": "Kotlin · Nativne izvršne datoteke",
+        "text": "Servisi s modernom konkurentnošću koji se prevode u vitke nativne izvršne datoteke za Linux, bez JVM-a."
+      },
+      {
+        "title": "Dovršen game engine",
+        "meta": "C# · OpenGL",
+        "text": "Dovršetak enginea započetog prije mnogo godina: provjereno učitavanje dodataka, iscrtavanje i fizika, napravljeni kako treba."
+      },
+      {
+        "title": "Knjiga",
+        "meta": "Pisanje",
+        "text": "Knjiga koja skuplja pitanja vrijedna postavljanja i najbolje odgovore koje mogu dati."
+      }
+    ],
+    "cta": "Predložite suradnju"
+  },
+  "contact": {
+    "title": "Kontakt · CODE ANYTHING",
+    "description": "Kontaktirajte CODE ANYTHING u vezi softverske arhitekture, sigurnosti, plaćanja, ugradbenih sustava i IoT-a ili bilo čega drugog. E-pošta ana@code-anything.hr. Rad na daljinu za EU i DACH.",
+    "heading": "Kontakt",
+    "lede": "Recite mi na čemu radite. Svaku poruku čitam osobno.",
+    "f_name": "Ime i prezime",
+    "f_email": "E-pošta",
+    "f_company": "Tvrtka (neobavezno)",
+    "f_topic": "Tema",
+    "topics": [
+      "Arhitektura i specifikacija",
+      "Spašavanje projekata i analiza uzroka",
+      "Sigurnost, plaćanja i skaliranje",
+      "Ugradbeni sustavi, IoT i industrija",
+      "Nešto drugo"
+    ],
+    "f_message": "Poruka",
+    "f_placeholder": "Što gradite, što vam stoji na putu i do kada vam treba?",
+    "f_send": "Pošalji",
+    "f_note": "Ovo otvara pripremljenu poruku u vašem programu za e-poštu. Ništa se ne šalje nijednom drugom poslužitelju.",
+    "f_sent": "Vaš program za e-poštu sada bi se trebao otvoriti. Ako se nije otvorio, pišite na",
+    "direct_title": "Izravno",
+    "direct_text": "Rad na daljinu za EU i DACH. Sastanci na hrvatskom ili engleskom.",
+    "legal_title": "Podaci o obrtu",
+    "country": "",
+    "vat": "Obrt nije u sustavu PDV-a.",
+    "email_label": "E-pošta",
+    "privacy_title": "Privatnost",
+    "privacy_text": "Ova stranica ne postavlja kolačiće, ne koristi analitiku ni praćenje i ne učitava ništa s drugih poslužitelja. Nekoliko postavki sprema se samo u vašem pregledniku. Ako mi pišete, vaša se adresa e-pošte koristi samo za odgovor."
+  }
+}

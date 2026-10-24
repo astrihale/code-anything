@@ -1,0 +1,292 @@
+{
+  "common": {
+    "nav": {
+      "index": "Company",
+      "services": "Services",
+      "expertise": "Expertise",
+      "founder": "Founder",
+      "ambitions": "Ambitions",
+      "contact": "Contact"
+    },
+    "tagline": "Software architecture and engineering, from the browser to the device",
+    "skip": "Skip to content",
+    "menu": "Main menu",
+    "language": "Language",
+    "keys_label": "Show keyboard shortcuts",
+    "legal_heading": "Legal",
+    "legal": "CODE ANYTHING · OIB 71429144049 · Not registered for VAT (obrt nije u sustavu PDV-a)",
+    "privacy": "No cookies, no trackers, no third-party requests.",
+    "keys": {
+      "title": "Keyboard",
+      "rows": [
+        [
+          "<kbd>1</kbd>–<kbd>6</kbd>",
+          "Open a page from the menu"
+        ],
+        [
+          "<kbd>Tab</kbd> <kbd>Shift</kbd>+<kbd>Tab</kbd>",
+          "Move between sections"
+        ],
+        [
+          "<kbd>←</kbd> <kbd>↑</kbd> <kbd>→</kbd> <kbd>↓</kbd>",
+          "Move within and between sections"
+        ],
+        [
+          "<kbd>Home</kbd> <kbd>End</kbd>",
+          "First or last item in a section"
+        ],
+        [
+          "<kbd>Enter</kbd> <kbd>Space</kbd>",
+          "Activate the selected item"
+        ],
+        [
+          "<kbd>Esc</kbd>",
+          "Close a window"
+        ],
+        [
+          "<kbd>?</kbd>",
+          "Show this window"
+        ]
+      ],
+      "hint": "Not every key is listed here.",
+      "secrets": "Secrets",
+      "close": "Close"
+    },
+    "copyright": "© {year} CODE ANYTHING, Ana Vuletić. All rights reserved.",
+    "credit": "Built with help from AI.",
+    "legal_link": "Legal details",
+    "sealed_kicker": "Coming soon",
+    "sealed_text": "This hall is still sealed. What lies behind these doors is being written up, and will open soon.",
+    "sealed_cta": "Ask me directly"
+  },
+  "index": {
+    "title": "CODE ANYTHING · Software architecture and engineering consultancy",
+    "description": "CODE ANYTHING is a young engineering consultancy from Zagreb. Software architecture, project rescue, security, payments and systems at scale, embedded and IoT. Remote across the EU and DACH, startups first.",
+    "epigraph": "Every failure has a cause.",
+    "hero_title": "An engineering consultancy for systems that cannot afford to fail quietly.",
+    "lede": "CODE ANYTHING is a young, independent consultancy from Zagreb. I design, build and repair software across the whole stack: the interfaces people rely on, backends built to scale, edge devices and firmware. The company is new. The engineering behind it is not.",
+    "cta_services": "See the services",
+    "cta_contact": "Get in touch",
+    "aim_title": "What I Set Out to Do",
+    "aim": [
+      "I am starting deliberately small: a few clients at a time, each one given full attention. <strong>Startups come first</strong>. They need someone who can turn an idea into a specification, an architecture and a first working product without wasting their runway.",
+      "I also take the problems others avoid: the integration everyone has declared impossible, the bug that only appears under load, the device in the field that nobody can reach. If something in your system is failing, it is failing for a reason. My job is to find that reason and remove it."
+    ],
+    "take_title": "What I Take On",
+    "cards": [
+      {
+        "title": "Architecture and Specification",
+        "meta": "For startups and new products",
+        "text": "From a rough idea to a specification, a system design and a plan your team can build from."
+      },
+      {
+        "title": "Rescue and Root-Cause Analysis",
+        "meta": "For teams that are stuck",
+        "text": "Race conditions, unexplained failures, slow systems and integrations that refuse to work."
+      },
+      {
+        "title": "Security, Payments and Scale",
+        "meta": "For growing SaaS platforms",
+        "text": "Bot protection, payment integrations, multi-region architecture and data residency."
+      },
+      {
+        "title": "Embedded, IoT and Industrial",
+        "meta": "For hardware, EV and retail companies",
+        "text": "Device software, Modbus and OCPP, POS and payment hardware, fleets and over-the-air updates."
+      }
+    ],
+    "take_more": "Scope, deliverables and ways to work together",
+    "work_title": "How I Work",
+    "tenets": [
+      {
+        "title": "Find the cause, not the symptom.",
+        "text": "A computer is a deterministic machine. Every fault has a reason, and that reason can be found, explained and removed for good."
+      },
+      {
+        "title": "Choose the right tool.",
+        "text": "There is always a better tool for the job, even when it is not the one the team already knows. I am not tied to any language or framework."
+      },
+      {
+        "title": "Build what is needed.",
+        "text": "Designs that meet today's requirements and leave room for tomorrow's, without paying for complexity nobody asked for."
+      },
+      {
+        "title": "Say it plainly.",
+        "text": "Honest scope, honest estimates, and an honest answer when I am not the right fit."
+      }
+    ],
+    "proven_title": "Proven in the Field",
+    "feats": [
+      {
+        "value": "Every layer",
+        "text": "from firmware and devices to backends and the browser"
+      },
+      {
+        "value": "100s",
+        "text": "of field devices deployed and updated over the air"
+      },
+      {
+        "value": "OCPP",
+        "text": "EV charging protocol implemented end to end, from library to charger"
+      },
+      {
+        "value": "0",
+        "text": "unexplained failures left unexplained"
+      }
+    ],
+    "behind_title": "Behind the Company",
+    "behind_text": "CODE ANYTHING was founded by <strong>Ana Vuletić</strong>, a software architect whose work spans large web platforms, payment and security systems, edge Linux and industrial protocols, and STM32 firmware.",
+    "behind_link": "Read about the founder",
+    "cta_final": "Tell me what you're working on"
+  },
+  "services": {
+    "title": "Services · CODE ANYTHING",
+    "description": "Services from CODE ANYTHING. Coming soon.",
+    "heading": "Services"
+  },
+  "expertise": {
+    "title": "Expertise · CODE ANYTHING",
+    "description": "Expertise at CODE ANYTHING. Coming soon.",
+    "heading": "Expertise"
+  },
+  "founder": {
+    "title": "Ana Vuletić · Founder of CODE ANYTHING · Software architect",
+    "description": "Ana Vuletić founded CODE ANYTHING. A software architect working across large web platforms, payments, security, industrial protocols and embedded devices.",
+    "profile_label": "Profile",
+    "github_label": "Ana Vuletić on GitHub",
+    "portrait_alt": "Illustrated portrait of Ana Vuletić",
+    "role": "Founder · Software Architect",
+    "stats": [
+      {
+        "label": "Company",
+        "value": "CODE ANYTHING"
+      },
+      {
+        "label": "Based in",
+        "value": "Zagreb, Croatia"
+      },
+      {
+        "label": "Works",
+        "value": "Remote · EU &amp; DACH"
+      },
+      {
+        "label": "Range",
+        "value": "Browser to device"
+      }
+    ],
+    "languages_label": "Languages",
+    "languages_value": "Croatian, English,",
+    "learning": "(learning)",
+    "stress": "Stress",
+    "profile_title": "Profile",
+    "profile": [
+      "I'm Ana, the founder of CODE ANYTHING. My work has never stayed in one layer of the stack. I have built and secured large web platforms, integrated payment providers and terminals, run fleets of devices in the field, connected PLCs, HMIs and EV chargers, and written firmware for STM32 microcontrollers.",
+      "That range is the point. Most failures happen between layers: between the device and the server, the job and the event, the laptop and the build machine. I am at my best where nobody else wants to look, finding out why something happens and making sure it stops.",
+      "I don't belong to one language or framework. C, C++, Java, Python and TypeScript are my working languages, and I keep studying more, because knowing how a tool works underneath is how you choose the right one."
+    ],
+    "principles_title": "Principles",
+    "principle_tool": "There's always a better tool for the job.",
+    "principle_reason": "Everything happens for a reason on a computer. It's a dumb, deterministic machine, not a human to reason with.",
+    "belongings_title": "Belongings",
+    "potion_title": "Hair Dye",
+    "potion_meta": "Consumable",
+    "potion_text": "Use: Changes the portrait's hair colour.",
+    "cube_title": "Puzzle Cube",
+    "cube_meta": "Solved quickly, often",
+    "cube_text": "“A sequence of deterministic algorithms.”",
+    "f1_title": "Chequered Flag",
+    "f1_text": "An interest in anything engineered to the last millisecond.",
+    "skate_title": "Skateboard",
+    "skate_meta": "Watched more than ridden",
+    "skate_text": "A long admiration for alternative sports and the people who land the tricks.",
+    "ramsey_title": "On Ramsey Theory",
+    "ramsey_meta": "Discrete mathematics",
+    "ramsey_text": "In any group of six, there are always three mutual acquaintances or three mutual strangers. R(3,3) = 6.",
+    "phones_title": "Headphones",
+    "phones_meta": "Always within reach",
+    "phones_text": "Every genre, and the story behind every record.",
+    "book_title": "The Unwritten Book",
+    "book_meta": "In progress",
+    "book_text": "A book that collects every question worth asking, and attempts to answer them.",
+    "cta_expertise": "Full expertise",
+    "cta_contact": "Contact",
+    "torch_title": "Torch",
+    "torch_meta": "Light source",
+    "torch_text": "Use: Light the torch and test your resolve again.",
+    "gloves_title": "Leather Gloves",
+    "gloves_meta": "Fine leather. They smell lovely.",
+    "gloves_text": "“Left on a counter, on purpose or not. Maybe I'll mail them back to her.”"
+  },
+  "ambitions": {
+    "title": "Ambitions · CODE ANYTHING · Projects I intend to build",
+    "description": "Projects I intend to build one day: graph-based authorization, lean edge services in Go, Kotlin Native on Linux, a finished game engine and more. Interested in one of them? Get in touch.",
+    "heading": "Ambitions",
+    "lede": "Work I intend to do one day. If one of these is close to your own plans, I would like to hear from you.",
+    "next_title": "Next",
+    "next": [
+      {
+        "title": "Graph-based authorization",
+        "meta": "Neo4j · Security",
+        "text": "Permission checks modelled as a graph, so “can this user do this?” is a single fast traversal, even across organisations and inherited roles."
+      },
+      {
+        "title": "Lean edge services in Go",
+        "meta": "Go · Docker · Embedded Linux",
+        "text": "Rewriting edge microservices as small static binaries in minimal containers, to cut memory and storage on constrained devices."
+      }
+    ],
+    "someday_title": "Someday",
+    "someday": [
+      {
+        "title": "Kotlin Native on Linux",
+        "meta": "Kotlin · Native binaries",
+        "text": "Services with modern concurrency that compile to lean native Linux binaries, without the JVM."
+      },
+      {
+        "title": "A finished game engine",
+        "meta": "C# · OpenGL",
+        "text": "Completing the engine started years ago: verified plugin loading, rendering and physics, done properly."
+      },
+      {
+        "title": "The book",
+        "meta": "Writing",
+        "text": "A book collecting the questions worth asking, and the best answers I can give."
+      }
+    ],
+    "cta": "Propose a collaboration"
+  },
+  "contact": {
+    "title": "Contact · CODE ANYTHING",
+    "description": "Contact CODE ANYTHING about software architecture, security, payments, embedded and IoT, or anything else. Email ana@code-anything.hr. Remote across the EU and DACH.",
+    "heading": "Contact",
+    "lede": "Tell me what you're working on. I read every message myself.",
+    "f_name": "Name",
+    "f_email": "Email",
+    "f_company": "Company (optional)",
+    "f_topic": "Topic",
+    "topics": [
+      "Architecture and specification",
+      "Rescue and root-cause analysis",
+      "Security, payments and scale",
+      "Embedded, IoT and industrial",
+      "Something else"
+    ],
+    "f_message": "Message",
+    "f_placeholder": "What are you building, what is in the way, and when do you need it?",
+    "f_send": "Send",
+    "f_note": "This opens a prepared email in your own mail application. Nothing is sent to any other server.",
+    "f_sent": "Your mail application should now be open. If it did not open, write to",
+    "direct_title": "Direct",
+    "direct_text": "Remote across the EU and DACH. Meetings in English or Croatian.",
+    "legal_title": "Legal details",
+    "country": ", Croatia",
+    "vat": "Not registered for VAT (obrt nije u sustavu PDV-a).",
+    "email_label": "Email",
+    "privacy_title": "Privacy",
+    "privacy_text": "This site sets no cookies, uses no analytics or trackers, and loads nothing from other servers. A few preferences are stored only in your own browser. If you write to me, your email is used only to reply."
+  },
+  "404": {
+    "title": "Off the Map · CODE ANYTHING",
+    "description": "This page does not exist."
+  }
+}

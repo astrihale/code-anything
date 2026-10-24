@@ -1,0 +1,76 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://code-anything.hr/#business",
+      "name": "CODE ANYTHING",
+      "legalName": "CODE ANYTHING, obrt za programiranje i druge usluge, vl. Ana Vuletić",
+      "url": "https://code-anything.hr/",
+      "email": "ana@code-anything.hr",
+      "taxID": "71429144049",
+      "description": "Software architecture and engineering consultancy: product specifications, backends at scale, security, payments, industrial integration, embedded and IoT.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sokolgradska ulica 22",
+        "addressLocality": "Zagreb",
+        "addressCountry": "HR"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "European Union"
+        },
+        {
+          "@type": "Country",
+          "name": "Germany"
+        },
+        {
+          "@type": "Country",
+          "name": "Austria"
+        },
+        {
+          "@type": "Country",
+          "name": "Switzerland"
+        },
+        {
+          "@type": "Country",
+          "name": "Croatia"
+        }
+      ],
+      "founder": {
+        "@id": "https://code-anything.hr/#ana"
+      },
+      "knowsAbout": [
+        "Software architecture",
+        "Technical specifications",
+        "Root-cause analysis",
+        "Web platforms",
+        "Security",
+        "Payments",
+        "Embedded systems",
+        "IoT",
+        "EV charging",
+        "CI/CD",
+        "AI agents"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://code-anything.hr/#ana",
+      "name": "Ana Vuletić",
+      "jobTitle": "Software Architect",
+      "worksFor": {
+        "@id": "https://code-anything.hr/#business"
+      },
+      "sameAs": [
+        "https://github.com/astrihale"
+      ],
+      "knowsLanguage": [
+        "hr",
+        "en",
+        "de"
+      ]
+    }
+  ]
+}
