@@ -879,20 +879,6 @@ body::after {
 .cat-rider .cat-wheel { transform-box: fill-box; transform-origin: center; animation: wheel 0.22s linear infinite; }
 @keyframes wheel { to { transform: rotate(360deg); } }
 
-/* Bats flit along the top of the page while the cat rides */
-.bat {
-  position: fixed; left: 0; top: var(--top, 30px); z-index: 86;
-  width: var(--size, 28px); height: calc(var(--size, 28px) * 0.6);
-  pointer-events: none;
-  transform: translateX(-60px);
-  animation: bat-fly var(--dur, 6s) linear var(--delay, 0s) forwards;
-}
-@keyframes bat-fly { to { transform: translateX(calc(100vw + 60px)); } }
-.bat .bat-wave { animation: bat-wave 0.5s ease-in-out infinite alternate; }
-@keyframes bat-wave { from { transform: translateY(-6px); } to { transform: translateY(6px); } }
-.bat .bat-wing { transform-box: fill-box; transform-origin: 50% 70%; animation: flap 0.11s ease-in-out infinite alternate; }
-@keyframes flap { to { transform: scaleY(0.25); } }
-
 /* Carol's glove, flying across the page to be returned */
 .glove-flight { position: fixed; z-index: 87; width: 52px; height: 52px; pointer-events: none; animation: glove-flight 1.4s cubic-bezier(0.45, 0, 0.3, 1) forwards; }
 .glove-flight svg { width: 100%; height: 100%; }

@@ -365,7 +365,7 @@
     document.querySelectorAll(`[data-egg="${egg}"]`).forEach((el) => el.addEventListener("click", () => unlock(id)));
   });
 
-  // The skateboard sends a calico cat rolling along the bottom of the screen, with bats across the menu.
+  // The skateboard sends a calico cat rolling along the bottom of the screen.
   document.querySelectorAll('[data-egg="skateboard"]').forEach((el) => {
     el.addEventListener("click", () => {
       if (document.querySelector(".cat-rider")) return;
@@ -375,22 +375,6 @@
       rider.innerHTML = CAT_SVG;
       document.body.append(rider);
       rider.addEventListener("animationend", (e) => { if (e.target === rider) rider.remove(); });
-      // ...and a few bats flit across the menu bar.
-      const bar = document.querySelector(".menu");
-      const barBox = bar ? bar.getBoundingClientRect() : { top: 0, height: 60 };
-      const barMiddle = Math.max(0, barBox.top) + barBox.height / 2;
-      for (let i = 0; i < 4; i++) {
-        const bat = document.createElement("div");
-        bat.className = "bat";
-        bat.setAttribute("aria-hidden", "true");
-        bat.innerHTML = BAT_SVG;
-        bat.style.setProperty("--top", `${Math.round(barMiddle - 14 + (Math.random() * 24 - 12))}px`);
-        bat.style.setProperty("--delay", `${(i * 0.3 + Math.random() * 0.2).toFixed(2)}s`);
-        bat.style.setProperty("--dur", `${(2.2 + Math.random() * 0.8).toFixed(2)}s`);
-        bat.style.setProperty("--size", `${22 + Math.round(Math.random() * 12)}px`);
-        document.body.append(bat);
-        bat.addEventListener("animationend", (e) => { if (e.target === bat) bat.remove(); });
-      }
     });
   });
 
@@ -559,15 +543,6 @@
   } catch { /* ignore */ }
 
   // ---------- Art ----------
-  const BAT_SVG = `<svg viewBox="0 0 40 24" width="100%" height="100%">
-    <g class="bat-wave" stroke="#8c6a50" stroke-width="0.7" stroke-linejoin="round">
-      <g class="bat-wing"><path d="M18 12 C12 3 6 3 1 7 C4 8 5 10 5 13 C8 11 11 12 14 15 Z" fill="#1d1416"/></g>
-      <g class="bat-wing"><path d="M22 12 C28 3 34 3 39 7 C36 8 35 10 35 13 C32 11 29 12 26 15 Z" fill="#1d1416"/></g>
-      <path d="M17 7 L18 3 L20 7 L22 3 L23 7 Z" fill="#1d1416"/>
-      <ellipse cx="20" cy="12" rx="4.2" ry="5.2" fill="#1d1416"/>
-      <circle cx="18.5" cy="10" r="0.9" fill="#ff5a5a"/><circle cx="21.5" cy="10" r="0.9" fill="#ff5a5a"/>
-    </g>
-  </svg>`;
   const CAT_SVG = `<svg viewBox="0 0 90 62" width="90" height="62">
     <defs><clipPath id="cat-body"><ellipse cx="44" cy="35" rx="20" ry="10"/><circle cx="66" cy="25" r="9"/></clipPath></defs>
     <g class="cat-bob">
