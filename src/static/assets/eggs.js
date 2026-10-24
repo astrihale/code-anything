@@ -118,6 +118,11 @@
       const r = resolve();
       document.documentElement.classList.toggle("resolve-virtue", r.virtue);
       document.documentElement.classList.toggle("resolve-affliction", !r.virtue);
+      // And so does the name.
+      document.querySelectorAll(".nameplate h1").forEach((h) => {
+        if (!h.dataset.name) h.dataset.name = h.textContent;
+        h.textContent = r.virtue ? h.dataset.name : "Evil Ana";
+      });
     }
     document.querySelectorAll("[data-achievements]").forEach((el) => {
       el.textContent = `${earned.size} / ${TOTAL} ${UI.count}`;
