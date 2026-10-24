@@ -86,8 +86,8 @@
       },
       {
         "title": "Security, Payments and Scale",
-        "meta": "For growing SaaS platforms",
-        "text": "Bot protection, payment integrations, multi-region architecture and data residency."
+        "meta": "For growing products",
+        "text": "Secure foundations, payment integrations, and systems that keep up as they grow."
       },
       {
         "title": "Embedded, IoT and Industrial",
@@ -135,7 +135,7 @@
       }
     ],
     "behind_title": "Behind the Company",
-    "behind_text": "CODE ANYTHING was founded by <strong>Ana Vuletić</strong>, a software architect whose work spans large web platforms, payment and security systems, edge Linux and industrial protocols, and STM32 firmware.",
+    "behind_text": "CODE ANYTHING was founded by <strong>Ana Vuletić</strong>, a software architect whose work spans web platforms, payment systems, edge Linux and industrial protocols, and STM32 firmware.",
     "behind_link": "Read about the founder",
     "cta_final": "Tell me what you're working on"
   },
@@ -151,7 +151,7 @@
   },
   "founder": {
     "title": "Ana Vuletić · Founder of CODE ANYTHING · Software architect",
-    "description": "Ana Vuletić founded CODE ANYTHING. A software architect working across large web platforms, payments, security, industrial protocols and embedded devices.",
+    "description": "Ana Vuletić founded CODE ANYTHING. A software architect working across web platforms, payments, security, industrial protocols and embedded devices.",
     "profile_label": "Profile",
     "github_label": "Ana Vuletić on GitHub",
     "portrait_alt": "Illustrated portrait of Ana Vuletić",
@@ -180,8 +180,8 @@
     "stress": "Stress",
     "profile_title": "Profile",
     "profile": [
-      "I'm Ana, the founder of CODE ANYTHING. My work has never stayed in one layer of the stack. I have built and secured large web platforms, integrated payment providers and terminals, run fleets of devices in the field, connected PLCs, HMIs and EV chargers, and written firmware for STM32 microcontrollers.",
-      "That range is the point. Most failures happen between layers: between the device and the server, the job and the event, the laptop and the build machine. I am at my best where nobody else wants to look, finding out why something happens and making sure it stops.",
+      "I'm Ana, the founder of CODE ANYTHING. My work has never stayed in one layer of the stack. I have built web platforms and the services behind them, integrated payment providers and terminals, run fleets of devices in the field, connected PLCs, HMIs and EV chargers, and written firmware for STM32 microcontrollers.",
+      "That range is the point. Most failures happen between layers: between the device and the server, between one service and the next. I am at my best where nobody else wants to look, finding out why something happens and making sure it stops.",
       "I don't belong to one language or framework. C, C++, Java, Python and TypeScript are my working languages, and I keep studying more, because knowing how a tool works underneath is how you choose the right one."
     ],
     "principles_title": "Principles",

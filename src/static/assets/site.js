@@ -74,6 +74,34 @@
     window.location.href = tab.href;
   });
 
+  // ---------- Swipe between pages on touch screens ----------
+  // A quick, clearly horizontal swipe moves to the next or previous page in the menu. It must
+  // start away from the screen edges, which the browser keeps for back and forward.
+  let swipe = null;
+  document.addEventListener("touchstart", (e) => {
+    const t = e.touches[0];
+    const zoomed = window.visualViewport && window.visualViewport.scale > 1.01;
+    const usable = e.touches.length === 1 && !zoomed && !modalOpen() && !typing(e.target) &&
+      !e.target.closest(".menu") && t.clientX > 30 && t.clientX < window.innerWidth - 30;
+    swipe = usable ? { x: t.clientX, y: t.clientY, at: e.timeStamp } : null;
+  }, { passive: true });
+  document.addEventListener("touchmove", (e) => { if (e.touches.length > 1) swipe = null; }, { passive: true });
+  document.addEventListener("touchend", (e) => {
+    if (!swipe) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - swipe.x;
+    const dy = t.clientY - swipe.y;
+    const quick = e.timeStamp - swipe.at < 700;
+    swipe = null;
+    if (!quick || Math.abs(dx) < 90 || Math.abs(dx) < Math.abs(dy) * 2) return;
+    const tabs = [...document.querySelectorAll(".menu .tab")];
+    const i = tabs.findIndex((tab) => tab.getAttribute("aria-current") === "page");
+    const next = i < 0 ? null : tabs[i + (dx < 0 ? 1 : -1)];
+    if (!next) return;
+    unlock("keybinder", { deferred: true });
+    window.location.href = next.href;
+  }, { passive: true });
+
   // Elements acting as buttons (the secret ones) also answer to Enter and Space.
   document.querySelectorAll('[role="button"][tabindex]').forEach((el) => {
     el.addEventListener("keydown", (e) => {
@@ -204,6 +232,11 @@
     });
     slot.addEventListener("pointerleave", (e) => { if (e.pointerType === "mouse") slot.classList.remove("open"); });
   });
+  // Hidden tooltips still take up layout, so keep them all on screen; otherwise the page
+  // grows wider than a phone and can be zoomed out.
+  const placeAll = () => slots.forEach(placeTooltip);
+  placeAll();
+  window.addEventListener("resize", placeAll, { passive: true });
   document.addEventListener("pointerdown", (e) => {
     if (!e.target.closest(".slot")) slots.forEach((s) => s.classList.remove("open"));
   });

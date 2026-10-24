@@ -86,8 +86,8 @@
       },
       {
         "title": "Sigurnost, plaćanja i skaliranje",
-        "meta": "Za SaaS platforme u rastu",
-        "text": "Zaštita od botova, integracije plaćanja, arhitektura u više regija i lokacija podataka."
+        "meta": "Za proizvode u rastu",
+        "text": "Sigurni temelji, integracije plaćanja i sustavi koji prate rast."
       },
       {
         "title": "Ugradbeni sustavi, IoT i industrija",
@@ -135,7 +135,7 @@
       }
     ],
     "behind_title": "Tko stoji iza tvrtke",
-    "behind_text": "CODE ANYTHING je osnovala <strong>Ana Vuletić</strong>, softverska arhitektica čiji rad obuhvaća velike web platforme, sustave plaćanja i sigurnosti, rubni Linux i industrijske protokole te firmware za STM32.",
+    "behind_text": "CODE ANYTHING je osnovala <strong>Ana Vuletić</strong>, softverska arhitektica čiji rad obuhvaća web platforme, sustave plaćanja, rubni Linux i industrijske protokole te firmware za STM32.",
     "behind_link": "O osnivačici",
     "cta_final": "Recite mi na čemu radite"
   },
@@ -151,7 +151,7 @@
   },
   "founder": {
     "title": "Ana Vuletić · Osnivačica tvrtke CODE ANYTHING · Softverska arhitektica",
-    "description": "Ana Vuletić osnovala je CODE ANYTHING. Softverska arhitektica koja radi na velikim web platformama, plaćanjima, sigurnosti, industrijskim protokolima i ugradbenim uređajima.",
+    "description": "Ana Vuletić osnovala je CODE ANYTHING. Softverska arhitektica koja radi na web platformama, plaćanjima, sigurnosti, industrijskim protokolima i ugradbenim uređajima.",
     "profile_label": "Profil",
     "github_label": "Ana Vuletić na GitHubu",
     "portrait_alt": "Ilustrirani portret Ane Vuletić",
@@ -180,8 +180,8 @@
     "stress": "Stres",
     "profile_title": "Profil",
     "profile": [
-      "Ja sam Ana, osnivačica tvrtke CODE ANYTHING. Moj rad nikad nije ostao u jednom sloju sustava. Gradila sam i štitila velike web platforme, integrirala pružatelje plaćanja i platne terminale, upravljala flotama uređaja na terenu, povezivala PLC-ove, HMI-je i punjače za električna vozila te pisala firmware za STM32 mikrokontrolere.",
-      "Upravo je taj raspon poanta. Većina kvarova nastaje između slojeva: između uređaja i poslužitelja, posla i događaja, prijenosnog računala i build poslužitelja. Najbolja sam ondje gdje nitko drugi ne želi gledati: otkrivam zašto se nešto događa i brinem se da prestane.",
+      "Ja sam Ana, osnivačica tvrtke CODE ANYTHING. Moj rad nikad nije ostao u jednom sloju sustava. Gradila sam web platforme i servise iza njih, integrirala pružatelje plaćanja i platne terminale, upravljala flotama uređaja na terenu, povezivala PLC-ove, HMI-je i punjače za električna vozila te pisala firmware za STM32 mikrokontrolere.",
+      "Upravo je taj raspon poanta. Većina kvarova nastaje između slojeva: između uređaja i poslužitelja, između jednog servisa i drugog. Najbolja sam ondje gdje nitko drugi ne želi gledati: otkrivam zašto se nešto događa i brinem se da prestane.",
       "Ne pripadam jednom jeziku ni okviru. C, C++, Java, Python i TypeScript moji su radni jezici, a stalno učim nove, jer razumijevanje toga kako alat radi iznutra jedini je način da se odabere pravi."
     ],
     "principles_title": "Načela",

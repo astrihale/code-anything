@@ -18,13 +18,13 @@
     "i-wanna-get-hurt": { icon: "♥", en: ["I Wanna Get Hurt", "Argued with a deterministic machine."], hr: ["I Wanna Get Hurt", "Rasprava s determinističkim strojem."], de: ["I Wanna Get Hurt", "Mit einer deterministischen Maschine diskutiert."] },
     boombox: { icon: "♫", en: ["Boombox Overhead", "Held it high outside the window."], hr: ["Kazetofon iznad glave", "Podignut visoko pod prozorom."], de: ["Ghettoblaster über dem Kopf", "Hoch gehalten vor dem Fenster."] },
     lloyd: { icon: "✉", en: ["Not a Career Plan", "Read the pinned note."], hr: ["Nije plan karijere", "Pročitana prikvačena bilješka."], de: ["Kein Karriereplan", "Die angeheftete Notiz gelesen."] },
-    sprachtalent: { icon: "D", en: ["Sprachtalent", "Clicked Deutsch until it answered."], hr: ["Sprachtalent", "Klikovi na Deutsch dok nije odgovorio."], de: ["Sprachtalent", "Wunderbar."] },
+    sprachtalent: { icon: "D", en: ["Sprachtalent", "Pressed Deutsch until it answered."], hr: ["Sprachtalent", "Pritisci na Deutsch dok nije odgovorio."], de: ["Sprachtalent", "Wunderbar."] },
     "new-hair": { icon: "⚗", en: ["New Colour", "The portrait changed. Don't be surprised."], hr: ["Nova boja", "Portret se promijenio. Bez iznenađenja."], de: ["Neue Farbe", "Das Porträt hat sich verändert."] },
     speedcuber: { icon: "■", en: ["Speedcuber", "Six quick turns. Solved."], hr: ["Speedcuber", "Šest brzih poteza. Riješeno."], de: ["Speedcuber", "Sechs schnelle Züge. Gelöst."] },
     "party-of-six": { icon: "∴", en: ["R(3,3) = 6", "Three acquaintances or three strangers. Always."], hr: ["R(3,3) = 6", "Troje poznanika ili troje stranaca. Uvijek."], de: ["R(3,3) = 6", "Drei Bekannte oder drei Fremde. Immer."] },
     "lights-out": { icon: "⚑", en: ["Lights Out", "And away we go."], hr: ["Lights Out", "I krenuli su."], de: ["Lights Out", "Und los geht's."] },
     "never-landed-it": { icon: "⟋", en: ["Never Landed It", "The kickflip remains theoretical."], hr: ["Nikad doskočeno", "Kickflip ostaje teoretski."], de: ["Nie gelandet", "Der Kickflip bleibt Theorie."] },
-    keybinder: { icon: "⌨", en: ["Keyboard Only", "Navigated without touching the mouse."], hr: ["Samo tipkovnica", "Navigacija bez miša."], de: ["Nur Tastatur", "Ohne Maus navigiert."] },
+    keybinder: { icon: "⇄", en: ["Shortcuts", "Changed pages without the menu."], hr: ["Prečaci", "Promjena stranice bez izbornika."], de: ["Abkürzungen", "Seite ohne Menü gewechselt."] },
     "flung-out-of-space": { icon: "🧤", en: ["Flung Out of Space", "The gloves found their way back."], hr: ["Flung Out of Space", "Rukavice su našle put natrag."], de: ["Flung Out of Space", "Die Handschuhe haben ihren Weg zurückgefunden."] },
     raven: { icon: "✒", en: ["Message Sent", "A reply will follow."], hr: ["Poruka poslana", "Odgovor slijedi."], de: ["Nachricht gesendet", "Eine Antwort folgt."] },
   };
@@ -156,6 +156,14 @@
   window.CodeAnything = { unlock };
 
   // ---------- Helpers ----------
+  // Lifting the finger may still send a click; it must not close what a touch just opened.
+  function swallowNextClick() {
+    const swallow = (c) => { c.stopPropagation(); c.preventDefault(); };
+    window.addEventListener("click", swallow, { capture: true, once: true });
+    setTimeout(() => window.removeEventListener("click", swallow, { capture: true }), 800);
+  }
+
+  // Several quick clicks, or a long press on touch screens, where quick taps tend to zoom.
   function rapidClicks(el, count, windowMs, onDone) {
     let times = [];
     el.addEventListener("click", () => {
@@ -164,6 +172,21 @@
       times.push(now);
       if (times.length >= count) { times = []; onDone(); }
     });
+    longPress(el, () => { times = []; onDone(); });
+  }
+
+  // Hold a finger on an element (touch screens only).
+  function longPress(el, onDone) {
+    el.classList.add("press-egg");
+    let timer = 0;
+    const cancel = () => clearTimeout(timer);
+    el.addEventListener("pointerdown", (e) => {
+      if (e.pointerType !== "touch") return;
+      cancel();
+      timer = setTimeout(() => { swallowNextClick(); onDone(); }, 650);
+    });
+    ["pointerup", "pointercancel", "pointerleave"].forEach((type) => el.addEventListener(type, cancel));
+    el.addEventListener("contextmenu", (e) => e.preventDefault());
   }
 
   function stage(content) {
@@ -214,11 +237,19 @@
       const words = document.createElement("p");
       words.className = "hurt";
       words.setAttribute("aria-label", "I wanna get hurt");
-      [..."I WANNA GET HURT"].forEach((ch, i) => {
-        const span = document.createElement("span");
-        span.textContent = ch === " " ? " " : ch;
-        span.style.setProperty("--i", i);
-        words.append(span);
+      // Letters hop one by one, but lines may only break between whole words.
+      let i = 0;
+      "I WANNA GET HURT".split(" ").forEach((text, w) => {
+        if (w > 0) { words.append(" "); i++; }
+        const word = document.createElement("span");
+        word.className = "word";
+        [...text].forEach((ch) => {
+          const span = document.createElement("span");
+          span.textContent = ch;
+          span.style.setProperty("--i", i++);
+          word.append(span);
+        });
+        words.append(word);
       });
       inner.append(words, hint(UI.hurt), hint(UI.close));
       const s = stage(inner);
@@ -230,11 +261,47 @@
   // ↑ ↑ ↓ ↓ ← → ← → B A
   const konami = ["arrowup", "arrowup", "arrowdown", "arrowdown", "arrowleft", "arrowright", "arrowleft", "arrowright", "b", "a"];
   let progress = 0;
-  document.addEventListener("keydown", (e) => {
-    const key = e.key.toLowerCase();
+  document.addEventListener("keydown", (e) => konamiStep(e.key.toLowerCase()));
+
+  // Touch screens have no arrow keys: holding the crest brings out a small gamepad instead.
+  document.querySelectorAll(".crest-link").forEach((el) => longPress(el, openPad));
+
+  function openPad() {
+    if (document.querySelector(".pad")) return;
+    progress = 0;
+    const pad = document.createElement("div");
+    pad.className = "pad";
+    pad.setAttribute("role", "group");
+    pad.setAttribute("aria-label", "Gamepad");
+    const button = (cls, label, name, onPress) => {
+      const btn = Object.assign(document.createElement("button"), { type: "button", className: cls, textContent: label });
+      btn.setAttribute("aria-label", name);
+      btn.addEventListener("click", onPress);
+      return btn;
+    };
+    const key = (cls, label, name, k) => button(cls, label, name, () => konamiStep(k));
+    const lights = document.createElement("div");
+    lights.className = "pad-lights";
+    lights.setAttribute("aria-hidden", "true");
+    lights.append(...konami.map(() => document.createElement("span")));
+    const cross = document.createElement("div");
+    cross.className = "pad-cross";
+    cross.append(key("pad-up", "▲", "Up", "arrowup"), key("pad-left", "◀", "Left", "arrowleft"),
+      key("pad-right", "▶", "Right", "arrowright"), key("pad-down", "▼", "Down", "arrowdown"));
+    const ab = document.createElement("div");
+    ab.className = "pad-ab";
+    ab.append(key("pad-b", "B", "B", "b"), key("pad-a", "A", "A", "a"));
+    pad.append(lights, cross, ab, button("pad-close", "✕", "Close", () => pad.remove()));
+    document.body.append(pad);
+  }
+
+  function konamiStep(key) {
     progress = key === konami[progress] ? progress + 1 : key === konami[0] ? 1 : 0;
+    const pad = document.querySelector(".pad");
+    if (pad) pad.querySelectorAll(".pad-lights span").forEach((light, i) => light.classList.toggle("on", i < progress));
     if (progress < konami.length) return;
     progress = 0;
+    if (pad) pad.remove();
     const inner = document.createElement("div");
     inner.className = "stage-inner";
     inner.innerHTML = BOOMBOX_SVG + '<p class="stage-caption">In your eyes…</p>';
@@ -242,7 +309,7 @@
     const s = stage(inner);
     floaters(s, "note-fly", ["♪", "♫", "♩", "♬"], 12);
     unlock("boombox");
-  });
+  }
 
   // Click "Deutsch" seven times quickly: unlocks the German language switch.
   document.querySelectorAll('[data-egg="deutsch"]').forEach((el) => {

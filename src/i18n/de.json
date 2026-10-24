@@ -86,8 +86,8 @@
       },
       {
         "title": "Sicherheit, Zahlungen und Skalierung",
-        "meta": "Für wachsende SaaS-Plattformen",
-        "text": "Bot-Schutz, Zahlungsintegrationen, Multi-Region-Architektur und Datenresidenz."
+        "meta": "Für wachsende Produkte",
+        "text": "Sichere Grundlagen, Zahlungsintegrationen und Systeme, die mit dem Wachstum Schritt halten."
       },
       {
         "title": "Embedded, IoT und Industrie",
@@ -135,7 +135,7 @@
       }
     ],
     "behind_title": "Hinter dem Unternehmen",
-    "behind_text": "CODE ANYTHING wurde von <strong>Ana Vuletić</strong> gegründet, einer Softwarearchitektin, deren Arbeit große Webplattformen, Zahlungs- und Sicherheitssysteme, Edge-Linux und Industrieprotokolle sowie STM32-Firmware umfasst.",
+    "behind_text": "CODE ANYTHING wurde von <strong>Ana Vuletić</strong> gegründet, einer Softwarearchitektin, deren Arbeit Webplattformen, Zahlungssysteme, Edge-Linux und Industrieprotokolle sowie STM32-Firmware umfasst.",
     "behind_link": "Über die Gründerin",
     "cta_final": "Erzählen Sie mir, woran Sie arbeiten"
   },
@@ -151,7 +151,7 @@
   },
   "founder": {
     "title": "Ana Vuletić · Gründerin von CODE ANYTHING · Softwarearchitektin",
-    "description": "Ana Vuletić hat CODE ANYTHING gegründet. Softwarearchitektin mit Arbeit an großen Webplattformen, Zahlungen, Sicherheit, Industrieprotokollen und Embedded-Geräten.",
+    "description": "Ana Vuletić hat CODE ANYTHING gegründet. Softwarearchitektin mit Arbeit an Webplattformen, Zahlungen, Sicherheit, Industrieprotokollen und Embedded-Geräten.",
     "profile_label": "Profil",
     "github_label": "Ana Vuletić auf GitHub",
     "portrait_alt": "Illustriertes Porträt von Ana Vuletić",
@@ -180,8 +180,8 @@
     "stress": "Stress",
     "profile_title": "Profil",
     "profile": [
-      "Ich bin Ana, die Gründerin von CODE ANYTHING. Meine Arbeit ist nie in einer Schicht des Stacks geblieben. Ich habe große Webplattformen gebaut und abgesichert, Zahlungsanbieter und Zahlungsterminals integriert, Geräteflotten im Feld betrieben, SPS, HMIs und Ladesäulen angebunden und Firmware für STM32-Mikrocontroller geschrieben.",
-      "Genau diese Bandbreite ist der Punkt. Die meisten Fehler entstehen zwischen den Schichten: zwischen Gerät und Server, Job und Event, Laptop und Build-Maschine. Am besten bin ich dort, wo sonst niemand hinsehen will: herausfinden, warum etwas passiert, und dafür sorgen, dass es aufhört.",
+      "Ich bin Ana, die Gründerin von CODE ANYTHING. Meine Arbeit ist nie in einer Schicht des Stacks geblieben. Ich habe Webplattformen und die Dienste dahinter gebaut, Zahlungsanbieter und Zahlungsterminals integriert, Geräteflotten im Feld betrieben, SPS, HMIs und Ladesäulen angebunden und Firmware für STM32-Mikrocontroller geschrieben.",
+      "Genau diese Bandbreite ist der Punkt. Die meisten Fehler entstehen zwischen den Schichten: zwischen Gerät und Server, zwischen einem Dienst und dem nächsten. Am besten bin ich dort, wo sonst niemand hinsehen will: herausfinden, warum etwas passiert, und dafür sorgen, dass es aufhört.",
       "Ich gehöre keiner Sprache und keinem Framework. C, C++, Java, Python und TypeScript sind meine Arbeitssprachen, und ich lerne ständig weitere, denn wer weiß, wie ein Werkzeug darunter funktioniert, wählt das richtige."
     ],
     "principles_title": "Grundsätze",

@@ -47,7 +47,8 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
+/* No double-tap zoom, so quick taps (secrets, the Konami code) stay taps; pinch zoom still works */
+html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; touch-action: manipulation; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
@@ -62,12 +63,15 @@ body {
   font: 500 clamp(1.12rem, 0.4vw + 1.04rem, 1.28rem)/1.6 var(--font-body);
   background-color: var(--void);
   background-image:
+    linear-gradient(to bottom, transparent calc(100% - 160px), var(--void)),
     radial-gradient(ellipse 80% 50% at 50% -8%, rgba(138, 15, 19, 0.42), transparent 70%),
     radial-gradient(ellipse at 50% 115%, rgba(60, 4, 8, 0.5), transparent 65%),
     url("/assets/cracks.svg"),
     var(--rough);
-  background-size: auto, auto, 640px 640px, 260px 260px;
-  background-attachment: fixed;
+  background-size: auto, auto, auto, 640px 640px, 260px 260px;
+  /* The first layer scrolls with the page, so its end fades into the plain black that phones
+     show past the last line. */
+  background-attachment: scroll, fixed, fixed, fixed, fixed;
 }
 /* Red vignette, like light failing at the edges */
 body::before {
@@ -127,11 +131,10 @@ main:focus-visible { outline: none; }
   display: flex; justify-content: center; align-items: center; gap: 10px;
   margin: 0 -16px 34px;
   padding: 10px 16px;
-  background: rgba(5, 5, 5, 0.92);
+  /* Opaque, so phone browsers extend it under the status bar instead of showing the page there */
+  background: var(--void);
   border-bottom: 1px solid #000;
   box-shadow: 0 1px 0 var(--iron);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
 }
 .menu ul { list-style: none; margin: 0; padding: 2px; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
 .menu ul::-webkit-scrollbar { display: none; }
@@ -472,6 +475,8 @@ main:focus-visible { outline: none; }
 }
 .axiom::before { content: "\201C"; position: absolute; left: 14px; top: 2px; font: 400 2.6rem/1 var(--font-head); color: var(--gold); }
 .axiom-egg { cursor: pointer; user-select: none; -webkit-user-select: none; }
+/* Pressed many times or held: no double-tap zoom, text selection or callout menu */
+.press-egg { touch-action: manipulation; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
 .axiom.axiom-egg:hover { background: linear-gradient(90deg, rgba(158, 20, 24, 0.3), rgba(0, 0, 0, 0.25) 70%); }
 .axiom-egg:active { transform: scale(0.99); }
 span.axiom-egg { border-bottom: 1px dotted var(--dim); }
@@ -740,12 +745,51 @@ span.axiom-egg:hover { color: var(--unique); }
   display: grid; place-items: center;
   overflow: hidden;
   background: radial-gradient(circle, rgba(60, 5, 8, 0.55), rgba(0, 0, 0, 0.9));
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   cursor: pointer;
   animation: fade-in 0.3s ease-out;
 }
 .stage:focus-visible { outline: none; box-shadow: none; }
 @keyframes fade-in { from { opacity: 0; } }
-.stage-inner { text-align: center; padding: 16px; }
+/* A dark panel, so the text never sits on top of the page behind it */
+.stage-inner {
+  max-width: calc(100vw - 32px);
+  padding: 28px clamp(16px, 4vw, 40px);
+  text-align: center;
+  background: rgba(8, 6, 6, 0.94);
+  border: 1px solid var(--iron);
+  box-shadow: 0 0 0 1px #000, 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 48px rgba(138, 15, 19, 0.3);
+}
+/* Gamepad for entering the Konami code on touch screens */
+.pad {
+  position: fixed; z-index: 85; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  display: grid; grid-template-columns: auto auto; grid-template-areas: "lights lights" "cross ab";
+  align-items: center; gap: 14px 34px;
+  padding: 16px 26px 20px;
+  background: #080606;
+  border: 1px solid var(--iron);
+  border-radius: 22px;
+  box-shadow: 0 0 0 1px #000, 0 18px 50px rgba(0, 0, 0, 0.85), 0 0 36px rgba(138, 15, 19, 0.3);
+  animation: fade-in 0.2s ease-out;
+}
+.pad button { font: 400 1rem/1 var(--font-head); color: var(--bone); cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.pad-lights { grid-area: lights; display: flex; justify-content: center; gap: 6px; }
+.pad-lights span { width: 8px; height: 8px; border-radius: 50%; background: #1d1716; box-shadow: inset 0 0 0 1px var(--iron); transition: background 0.15s, box-shadow 0.15s; }
+.pad-lights span.on { background: var(--blood-hi); box-shadow: 0 0 8px rgba(196, 30, 36, 0.8); }
+.pad-cross { grid-area: cross; display: grid; grid-template: repeat(3, 46px) / repeat(3, 46px); }
+.pad-cross button { background: linear-gradient(180deg, #2a221c, #120e0b); border: 1px solid #000; box-shadow: inset 0 0 0 1px var(--iron); }
+.pad-cross button:active { background: #3a0a10; }
+.pad-up { grid-area: 1 / 2; border-radius: 6px 6px 0 0; }
+.pad-left { grid-area: 2 / 1; border-radius: 6px 0 0 6px; }
+.pad-right { grid-area: 2 / 3; border-radius: 0 6px 6px 0; }
+.pad-down { grid-area: 3 / 2; border-radius: 0 0 6px 6px; }
+.pad-ab { grid-area: ab; display: flex; gap: 14px; align-items: center; transform: rotate(-18deg); }
+.pad-ab button { width: 58px; height: 58px; border-radius: 50%; font-size: 1.3rem; background: radial-gradient(circle at 35% 30%, #c41e24, #6e0f14 70%); border: 1px solid #000; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 3px 0 #000; }
+.pad-ab button:active { transform: translateY(2px); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12), 0 1px 0 #000; }
+.pad-b { margin-top: 26px; }
+.pad .pad-close { position: absolute; top: 8px; right: 10px; width: 32px; height: 32px; padding: 0; font-size: 0.95rem; color: var(--dim); background: none; border: 0; }
 .stage-caption { margin: 18px 0 0; font: 400 clamp(1.3rem, 4vw, 2rem)/1.3 var(--font-head); color: var(--bone); text-shadow: 0 2px 0 #000, 0 0 18px var(--ember); }
 .stage-hint { margin: 8px 0 0; color: var(--dim); font-style: italic; }
 .boombox { width: min(360px, 80vw); height: auto; image-rendering: pixelated; animation: raise 0.9s cubic-bezier(0.2, 1.2, 0.4, 1) both, sway 2.4s ease-in-out 0.9s infinite; }
@@ -762,7 +806,8 @@ span.axiom-egg:hover { color: var(--unique); }
   text-shadow: 0 3px 0 #7a1f4b, 0 0 26px rgba(255, 105, 180, 0.6);
   animation: boing 0.9s cubic-bezier(0.2, 1.8, 0.4, 1) both, wobble 1.6s ease-in-out 0.9s infinite;
 }
-.hurt span { display: inline-block; animation: hop 1.2s ease-in-out infinite; animation-delay: calc(var(--i) * 70ms); }
+.hurt .word { display: inline-block; white-space: nowrap; }
+.hurt .word > span { display: inline-block; animation: hop 1.2s ease-in-out infinite; animation-delay: calc(var(--i) * 70ms); }
 @keyframes boing { from { transform: scale(0.1) rotate(-12deg); opacity: 0; } }
 @keyframes wobble { 50% { transform: rotate(2deg) scale(1.03); } }
 @keyframes hop { 30% { transform: translateY(-10px); } 60% { transform: translateY(0); } }
