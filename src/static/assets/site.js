@@ -173,6 +173,11 @@
     });
   });
 
+  // Safari's Tab skips links and buttons unless they carry an explicit tabindex.
+  document.querySelectorAll("a[href], button, summary").forEach((el) => {
+    if (!el.hasAttribute("tabindex")) el.setAttribute("tabindex", "0");
+  });
+
   // ---------- Inventory tooltips: tap to open on touch, keep on screen ----------
   const slots = [...document.querySelectorAll(".slot")];
   function placeTooltip(slot) {
@@ -210,7 +215,7 @@
   // Anything at or above the bottom of the screen is revealed, so sections passed by a fast
   // scroll or a jump never stay hidden.
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    let pending = [...document.querySelectorAll(".tree, .quest, .legend > article, .tomes > li, .party > li, .arsenal > div, .feat, .board-col")]
+    let pending = [...document.querySelectorAll(".tree, .quest, .legend > article, .party > li, .arsenal > div, .feat, .board-col")]
       .filter((el) => el.getBoundingClientRect().top > window.innerHeight);
     pending.forEach((el) => el.classList.add("reveal"));
     let queued = false;
