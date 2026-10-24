@@ -471,7 +471,7 @@
     });
   });
 
-  // The pinned note on the services page.
+  // The pinned note on the ambitions board.
   document.querySelectorAll('details[data-egg="lloyd"]').forEach((el) => {
     el.addEventListener("toggle", () => { if (el.open) unlock("lloyd"); });
   });
