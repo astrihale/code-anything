@@ -127,7 +127,7 @@
       },
       {
         "value": "OCPP",
-        "text": "EV charging protocol implemented end to end, from library to charger"
+        "text": "domain knowledge of EV charging: how chargers and back ends talk, and where it goes wrong"
       },
       {
         "value": "0",

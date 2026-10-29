@@ -127,7 +127,7 @@
       },
       {
         "value": "OCPP",
-        "text": "protokol za punjenje električnih vozila, implementiran od biblioteke do punjača"
+        "text": "domensko znanje o punjenju električnih vozila: kako punjači i backend komuniciraju i gdje to zapne"
       },
       {
         "value": "0",
