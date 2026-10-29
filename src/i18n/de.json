@@ -135,7 +135,7 @@
       }
     ],
     "behind_title": "Hinter dem Unternehmen",
-    "behind_text": "CODE ANYTHING wurde von <strong>Ana Vuletić</strong> gegründet, einer Softwarearchitektin, deren Arbeit Webplattformen, Zahlungssysteme, Edge-Linux und Industrieprotokolle sowie STM32-Firmware umfasst.",
+    "behind_text": "CODE ANYTHING wurde von <strong>Ana Vuletić</strong> gegründet, einer Softwarearchitektin, deren Arbeit Webplattformen, Zahlungssysteme, Edge-Linux und Industrieprotokolle sowie Mikrocontroller-Firmware umfasst.",
     "behind_link": "Über die Gründerin",
     "cta_final": "Erzählen Sie mir, woran Sie arbeiten"
   },
@@ -180,7 +180,7 @@
     "stress": "Stress",
     "profile_title": "Profil",
     "profile": [
-      "Ich bin Ana, die Gründerin von CODE ANYTHING. Meine Arbeit ist nie in einer Schicht des Stacks geblieben. Ich habe Webplattformen und die Dienste dahinter gebaut, Zahlungsanbieter und Zahlungsterminals integriert, Geräteflotten im Feld betrieben, SPS, HMIs und Ladesäulen angebunden und Firmware für STM32-Mikrocontroller geschrieben.",
+      "Ich bin Ana, die Gründerin von CODE ANYTHING. Meine Arbeit ist nie in einer Schicht des Stacks geblieben. Ich habe Webplattformen und die Dienste dahinter gebaut, Zahlungsanbieter und Zahlungsterminals integriert, Geräteflotten im Feld betrieben, SPS, HMIs und Ladesäulen angebunden und Firmware für Mikrocontroller geschrieben.",
       "Genau diese Bandbreite ist der Punkt. Die meisten Fehler entstehen zwischen den Schichten: zwischen Gerät und Server, zwischen einem Dienst und dem nächsten. Am besten bin ich dort, wo sonst niemand hinsehen will: herausfinden, warum etwas passiert, und dafür sorgen, dass es aufhört.",
       "Ich gehöre keiner Sprache und keinem Framework. C, C++, Java, Python und TypeScript sind meine Arbeitssprachen, und ich lerne ständig weitere, denn wer weiß, wie ein Werkzeug darunter funktioniert, wählt das richtige."
     ],

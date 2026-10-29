@@ -135,7 +135,7 @@
       }
     ],
     "behind_title": "Tko stoji iza tvrtke",
-    "behind_text": "CODE ANYTHING je osnovala <strong>Ana Vuletić</strong>, softverska arhitektica čiji rad obuhvaća web platforme, sustave plaćanja, rubni Linux i industrijske protokole te firmware za STM32.",
+    "behind_text": "CODE ANYTHING je osnovala <strong>Ana Vuletić</strong>, softverska arhitektica čiji rad obuhvaća web platforme, sustave plaćanja, rubni Linux i industrijske protokole te firmware za mikrokontrolere.",
     "behind_link": "O osnivačici",
     "cta_final": "Recite mi na čemu radite"
   },
@@ -180,7 +180,7 @@
     "stress": "Stres",
     "profile_title": "Profil",
     "profile": [
-      "Ja sam Ana, osnivačica tvrtke CODE ANYTHING. Moj rad nikad nije ostao u jednom sloju sustava. Gradila sam web platforme i servise iza njih, integrirala pružatelje plaćanja i platne terminale, upravljala flotama uređaja na terenu, povezivala PLC-ove, HMI-je i punjače za električna vozila te pisala firmware za STM32 mikrokontrolere.",
+      "Ja sam Ana, osnivačica tvrtke CODE ANYTHING. Moj rad nikad nije ostao u jednom sloju sustava. Gradila sam web platforme i servise iza njih, integrirala pružatelje plaćanja i platne terminale, upravljala flotama uređaja na terenu, povezivala PLC-ove, HMI-je i punjače za električna vozila te pisala firmware za mikrokontrolere.",
       "Upravo je taj raspon poanta. Većina kvarova nastaje između slojeva: između uređaja i poslužitelja, između jednog servisa i drugog. Najbolja sam ondje gdje nitko drugi ne želi gledati: otkrivam zašto se nešto događa i brinem se da prestane.",
       "Ne pripadam jednom jeziku ni okviru. C, C++, Java, Python i TypeScript moji su radni jezici, a stalno učim nove, jer razumijevanje toga kako alat radi iznutra jedini je način da se odabere pravi."
     ],
